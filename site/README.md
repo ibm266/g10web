@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000)
 - **Design system** — cream/charcoal/terracotta tokens, Cormorant Garamond + Jost
 - **Shared components** — header, footer, hero (Ken Burns), marquee, service tabs, process steps, testimonials, FAQ, gallery, forms, sticky inquire bar
 - **Signature motion** — kinetic headlines (S1), Ken Burns, marquee, curtain reveal, CTA pulse, count-up testimonials; `prefers-reduced-motion` fallbacks
-- **Placeholder images** — symlinked from `fable/placeholders/`
+- **Production images** — curated set in `public/media/` (built from scrape via `scripts/build_site_media.py`)
 - **Inquire API** — `POST /api/inquire` (logs to console; wire to Resend in production)
 
 ## Key routes

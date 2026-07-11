@@ -25,9 +25,13 @@ yarn-error.log*
 *.pem
 
 # Large local scrape bulk (regenerate with scripts/)
-scraped/assets/images/
+scraped/assets/
 scraped/html/
 scraped/data/manifest.json
+
+# Design-only images (not served by the site; site uses site/public/media/)
+fable/placeholders/
+fable/screenshots/
 
 # Agent index (regenerated)
 INDEX.md
