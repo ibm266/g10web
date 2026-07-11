@@ -17,11 +17,11 @@ function StarIcon({ className }: { className?: string }) {
 
 export function StarRating({ count = 5, size = "md", className = "" }: StarRatingProps) {
   const sizeClass =
-    size === "sm" ? "h-3.5 w-3.5" : size === "lg" ? "h-5 w-5" : "h-4 w-4";
+    size === "sm" ? "h-4 w-4" : size === "lg" ? "h-7 w-7" : "h-5 w-5";
 
   return (
     <span
-      className={`inline-flex items-center gap-0.5 text-accent ${className}`}
+      className={`inline-flex items-center gap-1 text-accent ${className}`}
       role="img"
       aria-label={`${count} out of 5 stars`}
     >

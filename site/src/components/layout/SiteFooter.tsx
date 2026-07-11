@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Section";
 import { ROUTES } from "@/lib/routes";
+import { reviewPlatforms } from "@/lib/reviews";
 
 const footerLinks = {
   photography: [
@@ -29,7 +30,7 @@ export function SiteFooter({ condensed = false }: { condensed?: boolean }) {
     <footer className="bg-bg-dark text-text-on-dark">
       <Container className="py-16 md:py-20">
         {!condensed && (
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             <div>
               <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
                 Photography
@@ -74,6 +75,25 @@ export function SiteFooter({ condensed = false }: { condensed?: boolean }) {
             </div>
             <div>
               <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
+                Reviews
+              </h3>
+              <ul className="space-y-2">
+                {reviewPlatforms.map((platform) => (
+                  <li key={platform.name}>
+                    <a
+                      href={platform.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-text-on-dark/80 hover:text-highlight"
+                    >
+                      {platform.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
                 Subscribe
               </h3>
               <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
@@ -93,7 +113,23 @@ export function SiteFooter({ condensed = false }: { condensed?: boolean }) {
           </div>
         )}
 
-        <p className="mt-10 font-display text-lg italic text-text-on-dark/90 md:mt-14">
+        {condensed && (
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            {reviewPlatforms.map((platform) => (
+              <a
+                key={platform.name}
+                href={platform.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-text-on-dark/80 hover:text-highlight"
+              >
+                {platform.name} reviews
+              </a>
+            ))}
+          </div>
+        )}
+
+        <p className={`font-display text-lg italic text-text-on-dark/90 ${condensed ? "mt-6" : "mt-10 md:mt-14"}`}>
           We proudly welcome everyone regardless of religion, gender, race, or sexual orientation!
         </p>
 

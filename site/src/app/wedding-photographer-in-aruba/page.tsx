@@ -16,12 +16,12 @@ import { slotGalleryItems, slotImageMeta } from "@/lib/images";
 import { ROUTES } from "@/lib/routes";
 
 const faq = [
-  { q: "What is the booking process?", a: "Inquire, receive packages, pay deposit online — first come, first served." },
+  { q: "What is the booking process?", a: "Inquire, receive packages, pay deposit online. First come, first served." },
   { q: "When will I receive my gallery?", a: "Wedding galleries typically within 4-6 weeks; sessions within 1-2 weeks." },
-  { q: "How many photos will I receive?", a: "You'll receive all edited photos from your coverage — no RAW files policy." },
+  { q: "How many photos will I receive?", a: "You'll receive all edited photos from your coverage. No RAW files policy." },
   { q: "What venues do you shoot at?", a: "All Aruba venues plus worldwide destination weddings." },
   { q: "What are your prices?", a: "Wedding packages starting at $2,499. Custom packages available upon request." },
-  { q: "Can I add videography?", a: "Yes! Photo + video packages available — inquire for combined pricing." },
+  { q: "Can I add videography?", a: "Yes! Photo + video packages available. Inquire for combined pricing." },
   { q: "Do you charge travel fees?", a: "Aruba sessions included; destination weddings may include travel fees depending on location." },
 ];
 
@@ -31,7 +31,7 @@ const services = [
   { title: "Family Session", href: ROUTES.photographyFamily },
 ];
 
-export const metadata = { title: "Wedding Photographer in Aruba — G10 Studio" };
+export const metadata = { title: "Wedding Photographer in Aruba | G10 Studio" };
 
 export default function WeddingLandingPage() {
   const story = slotImageMeta("wedding-landing", "story");

@@ -22,7 +22,7 @@ const films = [
   },
 ];
 
-export const metadata = { title: "Wedding Videography in Aruba — G10 Studio" };
+export const metadata = { title: "Wedding Videography in Aruba | G10 Studio" };
 
 export default function VideographyWeddingPage() {
   const featured = slotImageMeta("videography-wedding", "featured");
@@ -38,7 +38,7 @@ export default function VideographyWeddingPage() {
         ]}
       >
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-muted">
-          Cherish every moment of your big day with cinematic wedding films — from the getting
+          Cherish every moment of your big day with cinematic wedding films, from the getting
           ready to the last dance, captured with emotion and artistry.
         </p>
       </PageIntro>
@@ -60,10 +60,10 @@ export default function VideographyWeddingPage() {
               ▶
             </button>
           </div>
-          <p className="mt-4 text-sm font-medium">Official Aruba wedding trailer — Alexis & Taylor</p>
+          <p className="mt-4 text-sm font-medium">Official Aruba wedding trailer: Alexis & Taylor</p>
           <p className="mt-2 text-sm leading-relaxed text-text-muted">
             A cinematic highlight film capturing the essence of a destination wedding at The Little
-            One Aruba — golden hour, candid moments, and pure joy.
+            One Aruba: golden hour, candid moments, and pure joy.
           </p>
         </Container>
       </Section>
@@ -88,7 +88,7 @@ export default function VideographyWeddingPage() {
       </Section>
       <DarkCTA
         title="Or get in touch"
-        subtitle="Photo + video packages available — one team, one vision."
+        subtitle="Photo + video packages available. One team, one vision."
         primaryLabel="Inquire"
       />
       <SiteFooter />

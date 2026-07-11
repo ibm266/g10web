@@ -15,7 +15,7 @@ const categories = [
   { title: "Commercial", subtitle: "Brand & product films", href: ROUTES.videography },
 ];
 
-export const metadata = { title: "Videography Portfolio — G10 Studio" };
+export const metadata = { title: "Videography Portfolio | G10 Studio" };
 
 export default function VideographyHubPage() {
   return (
@@ -33,7 +33,7 @@ export default function VideographyHubPage() {
       <Section>
         <Container narrow>
           <p className="text-base leading-relaxed text-text-muted">
-            From cinematic wedding films to event coverage and short-form reels — G10 Studio
+            From cinematic wedding films to event coverage and short-form reels. G10 Studio
             captures your story in motion with the same warmth and professionalism as our
             photography.
           </p>

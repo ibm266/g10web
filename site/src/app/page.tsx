@@ -43,7 +43,7 @@ export default function HomePage() {
       <Section>
         <ServiceTabs />
       </Section>
-      <Section dark>
+      <Section dark id="how-it-works">
         <ProcessSteps />
       </Section>
       <Section>

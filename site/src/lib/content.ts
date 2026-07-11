@@ -1,4 +1,5 @@
 import { ROUTES } from "./routes";
+import { REVIEW_PRIMARY_URL } from "./reviews";
 
 export const testimonials = [
   {
@@ -93,15 +94,15 @@ export const homeFaq = [
   },
   {
     q: "How do I book you for my Wedding?",
-    a: "Click here to Inquire for Wedding Photography — I'll reply with packages and prices within 72 hours.",
+    a: "Click here to Inquire for Wedding Photography. I'll reply with packages and prices within 72 hours.",
   },
   {
     q: "How do I book you for a couple's photoshoot?",
-    a: "Click here to inquire for your photography session — engagement, maternity, anniversary and more.",
+    a: "Click here to inquire for your photography session, including engagement, maternity, anniversary and more.",
   },
   {
     q: "How do I book you for a family photoshoot?",
-    a: "Click here to inquire for your family session — mini and full sessions available in Aruba.",
+    a: "Click here to inquire for your family session, including mini and full sessions available in Aruba.",
   },
 ];
 
@@ -109,18 +110,26 @@ export const whyG10Cards = [
   {
     title: "250+ Testimonials",
     body: "Because why take it from me? I'm proud to say I have Over 250+ 5-star reviews across 4 platforms and 6 years. Couples, Families & Friends alike all trust G10 Studio with their priceless memories!",
+    cta: {
+      label: "Read reviews for yourself",
+      href: REVIEW_PRIMARY_URL,
+      external: true,
+    },
   },
   {
     title: "My Personality",
     body: "I love to make jokes, have a good conversation, and I don't take life too seriously. I'm always talking to you behind the lens so there's never a time that you can feel awkward!",
+    cta: { label: "About me", href: ROUTES.about },
   },
   {
     title: "YOUR Experience",
     body: "It's about YOU. From the initial Zoom call, to the booking process, to the wedding day, to final gallery delivery, I guarantee a stress-free experience from start to finish.",
+    cta: { label: "How does it all work?", href: "/#how-it-works" },
   },
   {
     title: "Timeless, Vibrant, & Authentic Style",
     body: "Never ever ever going out of style… only ever delivering photos that look natural with a WOW factor that makes your eyes pop. You'll look back with your grandkids in 30 years and still be amazed…",
+    cta: { label: "See the full gallery", href: ROUTES.portfolio },
   },
 ];
 
@@ -167,7 +176,7 @@ export const blogPosts = [
 
 export const sessionNotes = [
   "Prices start at $600 for mini sessions.",
-  'Please include your "dates in Aruba" — flexibility helps!',
+  'Please include your "dates in Aruba". Flexibility helps!',
   "Book ideally 4 weeks prior to your session.",
   "No same-day bookings available.",
   "After inquiring, you'll receive a booking link and deposit instructions.",

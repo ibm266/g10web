@@ -58,7 +58,7 @@ export function InquireForm({ variant }: { variant: "wedding" | "session" }) {
       if (!res.ok) throw new Error("Failed");
       setSubmitted(true);
     } catch {
-      setError("Something went wrong — please try again or email info@g10.studio");
+      setError("Something went wrong. Please try again or email info@g10.studio");
     } finally {
       setLoading(false);
     }
@@ -68,7 +68,7 @@ export function InquireForm({ variant }: { variant: "wedding" | "session" }) {
     return (
       <Container narrow>
         <div className="rounded-[20px] border border-border bg-surface p-8 text-center">
-          <h3 className="font-display text-2xl font-medium">Thanks — check your email!</h3>
+          <h3 className="font-display text-2xl font-medium">Thanks! Check your email!</h3>
           <p className="mt-3 text-text-muted">
             We typically respond within {variant === "wedding" ? "72" : "48"} hours.
           </p>

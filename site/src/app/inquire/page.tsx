@@ -32,7 +32,7 @@ const cards = [
   },
 ] as const;
 
-export const metadata = { title: "Inquire — G10 Studio" };
+export const metadata = { title: "Inquire | G10 Studio" };
 
 export default function InquireRouterPage() {
   return (
@@ -46,7 +46,7 @@ export default function InquireRouterPage() {
         ]}
       >
         <p className="mt-4 max-w-lg text-[15px] font-light leading-relaxed text-text-muted">
-          Pick your session — you&apos;ll get the right form, and I&apos;ll reply with packages
+          Pick your session and you&apos;ll get the right form, and I&apos;ll reply with packages
           and prices.
         </p>
       </PageIntro>
@@ -61,6 +61,7 @@ export default function InquireRouterPage() {
               subtitle={card.subtitle}
               href={card.href}
               delay={card.delay}
+              overlay="light"
             />
           ))}
         </Container>

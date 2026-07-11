@@ -17,10 +17,10 @@ import { slotGalleryItems, slotImageMeta } from "@/lib/images";
 import { ROUTES } from "@/lib/routes";
 
 const weddingFaq = [
-  { q: "What is your photography style?", a: "A mixture of documentarian and editorial — posed show-stoppers plus natural candid emotion." },
+  { q: "What is your photography style?", a: "A mixture of documentarian and editorial, with posed show-stoppers plus natural candid emotion." },
   { q: "How far in advance should I book?", a: "We recommend booking at least 6 months prior for weddings. A deposit secures your date." },
   { q: "When will I receive my gallery?", a: "Typically within 4-6 weeks after your wedding." },
-  { q: "How many photos will I receive?", a: "All edited photos from your coverage — RAW files not included per policy." },
+  { q: "How many photos will I receive?", a: "All edited photos from your coverage. RAW files not included per policy." },
   { q: "What venues do you shoot at?", a: "All Aruba venues plus worldwide destination weddings." },
   { q: "What are your prices?", a: "Wedding packages starting at $2,000. Custom packages available upon request." },
   { q: "Do you charge travel fees?", a: "Destination weddings may include travel fees depending on location." },
@@ -29,7 +29,7 @@ const weddingFaq = [
 const guidedSteps = [
   { num: "01", title: "Let's meet 👋", body: "We'll chat over email or Zoom to discuss your vision and make sure we're a great fit." },
   { num: "02", title: "Preparations ⏳", body: "I'll help with poses, outfit choices, timeline planning, and everything in between." },
-  { num: "03", title: "The Big Day is here 💒", body: "We meet, loosen up, chat first — then capture every moment with documentarian + editorial flair." },
+  { num: "03", title: "The Big Day is here 💒", body: "We meet, loosen up, chat first, then capture every moment with documentarian + editorial flair." },
   { num: "04", title: "Et Violà, Your Final Gallery 🖼️", body: "Your personal online gallery with download, print, and album options through G10 Studio Shop." },
 ];
 
@@ -170,7 +170,7 @@ export function PhotographyWeddingTemplate({
             HE IS MAGIC!
           </p>
           <blockquote className="mt-6 font-display text-2xl italic">
-            Jiten captured our day perfectly — fun, professional, and absolutely magical.
+            Jiten captured our day perfectly: fun, professional, and absolutely magical.
           </blockquote>
           <p className="mt-4 text-sm uppercase tracking-wider text-text-muted">
             Mike & Carissa Scarfo

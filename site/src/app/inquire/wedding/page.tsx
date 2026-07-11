@@ -6,7 +6,7 @@ import { PAGE_CONTENT_CLASS, PageIntro, Section } from "@/components/ui/Section"
 import { Eyebrow } from "@/components/ui/Typography";
 import { ROUTES } from "@/lib/routes";
 
-export const metadata = { title: "Wedding Experience Inquiry — G10 Studio" };
+export const metadata = { title: "Wedding Experience Inquiry | G10 Studio" };
 
 export default function InquireWeddingPage() {
   return (

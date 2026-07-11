@@ -148,7 +148,7 @@ export function Filmstrip({
     <div>
       <div
         ref={scrollRef}
-        className="flex snap-x snap-mandatory scroll-smooth gap-3 overflow-x-auto px-[max(1.25rem,calc(50%-39vw))] pb-2 md:px-[max(3rem,calc(50%-10rem))]"
+        className="scrollbar-hide flex snap-x snap-mandatory scroll-smooth gap-3 overflow-x-auto px-[max(1.25rem,calc(50%-39vw))] pb-2 md:px-[max(3rem,calc(50%-10rem))]"
       >
         {tiles.map((item, i) => (
           <div
@@ -173,7 +173,7 @@ export function Filmstrip({
               aria-label={`Go to photo ${i + 1} of ${tiles.length}`}
               onClick={() => scrollTo(i)}
               className={`h-2 shrink-0 rounded-full transition-all duration-300 ${
-                active === i ? "w-6 bg-accent" : "w-2 bg-border hover:bg-text-muted/40"
+                active === i ? "w-6 bg-accent" : "w-2 bg-accent/25 hover:bg-accent/40"
               }`}
             />
           ))}

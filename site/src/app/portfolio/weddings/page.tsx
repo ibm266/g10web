@@ -1,7 +1,7 @@
 import { PhotographyWeddingTemplate } from "@/components/templates/PhotographyWeddingPage";
 import { ROUTES } from "@/lib/routes";
 
-export const metadata = { title: "Wedding Portfolio — G10 Studio" };
+export const metadata = { title: "Wedding Portfolio | G10 Studio" };
 
 export default function PortfolioWeddingsPage() {
   return (

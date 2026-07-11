@@ -22,9 +22,6 @@ export function MeetPhotographer() {
               sizes="(max-width: 768px) 100vw, 480px"
             />
           </div>
-          <span className="absolute -bottom-3.5 right-1.5 rotate-2 rounded-full bg-accent px-4 py-2 text-xs font-medium tracking-wider text-[#f5efe6]">
-            a.k.a. G10
-          </span>
         </div>
 
         <div className="mt-10 md:mt-0">
@@ -58,7 +55,7 @@ export function MeetPhotographer() {
             </em>
           </p>
           <p className="mt-5 font-display text-xl italic md:text-2xl">
-            — see you at the beach, Jiten
+            see you at the beach, Jiten
           </p>
           <ArrowLink href={ROUTES.about} className="mt-4">
             More about me

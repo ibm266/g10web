@@ -7,7 +7,7 @@ import { Eyebrow } from "@/components/ui/Typography";
 import { sessionNotes } from "@/lib/content";
 import { ROUTES } from "@/lib/routes";
 
-export const metadata = { title: "Photoshoot Inquiry — G10 Studio" };
+export const metadata = { title: "Photoshoot Inquiry | G10 Studio" };
 
 export default function InquireSessionPage() {
   return (

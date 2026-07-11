@@ -7,7 +7,7 @@ import { ReviewsClaim } from "@/components/sections/ReviewsClaim";
 import { Container, PAGE_CONTENT_CLASS, PageIntro, Section } from "@/components/ui/Section";
 import { portfolioGalleryItems } from "@/lib/images";
 
-export const metadata = { title: "Portfolio — G10 Studio" };
+export const metadata = { title: "Portfolio | G10 Studio" };
 
 export default function PortfolioHubPage() {
   return (

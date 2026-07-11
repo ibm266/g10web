@@ -56,6 +56,7 @@ export function CategoryCard({
   subtitle,
   href,
   delay = 0,
+  overlay = "dark",
 }: {
   page: string;
   slot: string;
@@ -64,8 +65,12 @@ export function CategoryCard({
   subtitle: string;
   href: string;
   delay?: number;
+  /** dark = cream text on dark gradient; light = terracotta/charcoal text, no image overlay */
+  overlay?: "dark" | "light";
 }) {
   const meta = slotImageMeta(page, slot);
+
+  const isLight = overlay === "light";
 
   return (
     <Link
@@ -81,12 +86,36 @@ export function CategoryCard({
         focalY={meta?.focalY}
         sizes="(max-width: 768px) 100vw, 400px"
       />
-      <span className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-dark/70" />
-      <span className="absolute bottom-4 left-5 right-5 text-text-on-dark">
-        <span className="block font-display text-[28px] italic font-medium">{title}</span>
+      {overlay === "dark" && (
+        <span className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg-dark/70" />
+      )}
+      <span
+        className={`absolute bottom-4 left-5 right-5 ${isLight ? "text-text" : "text-text-on-dark"}`}
+      >
+        <span
+          className={`block font-display text-[28px] italic font-medium ${
+            isLight ? "text-accent-deep [text-shadow:0_1px_3px_rgba(250,247,242,0.95),0_0_16px_rgba(250,247,242,0.75)]" : ""
+          }`}
+        >
+          {title}
+        </span>
         <span className="mt-1 flex items-center justify-between">
-          <span className="text-[13px] text-text-on-dark/85">{subtitle}</span>
-          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/60 transition-transform group-hover:translate-x-1">
+          <span
+            className={`text-[13px] ${
+              isLight
+                ? "text-text [text-shadow:0_1px_2px_rgba(250,247,242,0.95),0_0_10px_rgba(250,247,242,0.7)]"
+                : "text-text-on-dark/85"
+            }`}
+          >
+            {subtitle}
+          </span>
+          <span
+            className={`flex h-10 w-10 items-center justify-center rounded-full border backdrop-blur-sm transition-transform group-hover:translate-x-1 ${
+              isLight
+                ? "border-accent/50 bg-bg/80 text-accent-deep"
+                : "border-white/60"
+            }`}
+          >
             →
           </span>
         </span>

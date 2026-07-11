@@ -15,7 +15,7 @@ const categories = [
   { title: "Solo", href: ROUTES.photographySolo },
 ] as const;
 
-export const metadata = { title: "Photography Portfolio — G10 Studio" };
+export const metadata = { title: "Photography Portfolio | G10 Studio" };
 
 export default function PhotographyHubPage() {
   return (
@@ -29,7 +29,7 @@ export default function PhotographyHubPage() {
         ]}
       >
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-muted">
-          Browse wedding, couple, family, and solo photography — all shot in paradise with a
+          Browse wedding, couple, family, and solo photography, all shot in paradise with a
           documentarian meets editorial style.
         </p>
       </PageIntro>
