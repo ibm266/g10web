@@ -55,12 +55,8 @@ export function SiteHeader({ variant = "solid", backHref }: Props) {
     ? "bg-transparent border-b border-transparent"
     : "bg-bg border-b border-border";
 
-  /** Fixed mobile controls always use frosted glass */
-  const glassControlClass = "glass-control text-text-on-dark";
-
-  const desktopControlClass = isOverHero && lightControls
-    ? glassControlClass
-    : "border border-border bg-bg/95 text-text shadow-sm backdrop-blur-md";
+  /** Fixed mobile controls — frosted glass + deep terracotta */
+  const glassControlClass = "glass-control text-accent-deep";
 
   const toggleMenu = () => setMenuOpen((v) => !v);
 
@@ -76,7 +72,7 @@ export function SiteHeader({ variant = "solid", backHref }: Props) {
                 href={backHref}
                 aria-label="Go back"
                 data-ui="button"
-                className={`hidden h-11 w-11 cursor-pointer items-center justify-center rounded-full text-lg transition-transform duration-200 active:scale-95 lg:flex ${desktopControlClass}`}
+                className={`hidden h-11 w-11 cursor-pointer items-center justify-center rounded-full text-lg transition-transform duration-200 active:scale-95 lg:flex ${glassControlClass}`}
               >
                 ←
               </Link>

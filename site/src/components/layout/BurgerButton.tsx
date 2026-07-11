@@ -8,7 +8,7 @@ type Props = {
 };
 
 export function BurgerButton({ open, onClick, className = "", light = false }: Props) {
-  const bar = light ? "bg-text-on-dark" : "bg-text";
+  const bar = light ? "bg-accent-deep" : "bg-text";
 
   return (
     <button
