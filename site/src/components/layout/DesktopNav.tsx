@@ -4,6 +4,12 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { ROUTES } from "@/lib/routes";
 
+const weddingLinks = [
+  { label: "Wedding photographer in Aruba", href: ROUTES.weddingLanding },
+  { label: "The wedding experience", href: ROUTES.photographyWedding },
+  { label: "Destination weddings worldwide", href: ROUTES.photographyDestinationWeddings },
+];
+
 const portfolioLinks = [
   { label: "Weddings", href: ROUTES.photographyWedding },
   { label: "Couple's Portraits", href: ROUTES.photographyCouple },
@@ -18,7 +24,9 @@ type Props = {
 
 export function DesktopNav({ light = false }: Props) {
   const [portfolioOpen, setPortfolioOpen] = useState(false);
+  const [weddingsOpen, setWeddingsOpen] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const weddingsCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const openPortfolio = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -29,18 +37,75 @@ export function DesktopNav({ light = false }: Props) {
     closeTimer.current = setTimeout(() => setPortfolioOpen(false), 120);
   };
 
+  const openWeddings = () => {
+    if (weddingsCloseTimer.current) clearTimeout(weddingsCloseTimer.current);
+    setWeddingsOpen(true);
+  };
+
+  const closeWeddings = () => {
+    weddingsCloseTimer.current = setTimeout(() => setWeddingsOpen(false), 120);
+  };
+
   const linkClass = light
     ? "text-text-on-dark/90 hover:text-text-on-dark"
     : "text-text/90 hover:text-text";
 
   return (
     <nav className="hidden items-center gap-7 lg:flex" aria-label="Main">
-      <Link
-        href={ROUTES.weddingLanding}
-        className={`cursor-pointer text-sm font-medium tracking-wide transition-colors duration-200 ${linkClass}`}
+      <div
+        className="relative"
+        onMouseEnter={openWeddings}
+        onMouseLeave={closeWeddings}
+        onFocus={openWeddings}
+        onBlur={(e) => {
+          if (!e.currentTarget.contains(e.relatedTarget as Node)) closeWeddings();
+        }}
       >
-        Weddings
-      </Link>
+        <Link
+          href={ROUTES.weddingLanding}
+          className={`inline-flex cursor-pointer items-center gap-1.5 text-sm font-medium tracking-wide transition-colors duration-200 ${linkClass} ${weddingsOpen ? (light ? "text-text-on-dark" : "text-text") : ""}`}
+          aria-haspopup="true"
+          aria-expanded={weddingsOpen}
+        >
+          Weddings
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            aria-hidden
+            className={`transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${weddingsOpen ? "rotate-180" : ""}`}
+          >
+            <path
+              d="M2.5 4.5L6 8l3.5-3.5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </Link>
+
+        <div
+          className={`absolute left-0 top-full z-40 pt-3 transition-all duration-250 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+            weddingsOpen
+              ? "pointer-events-auto translate-y-0 opacity-100"
+              : "pointer-events-none -translate-y-1 opacity-0"
+          }`}
+        >
+          <div className="nav-dropdown min-w-[280px] rounded-2xl py-2">
+            {weddingLinks.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="block cursor-pointer px-4 py-2.5 text-sm text-text transition-colors duration-200 hover:bg-accent/8 hover:text-accent"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
 
       <div
         className="relative"

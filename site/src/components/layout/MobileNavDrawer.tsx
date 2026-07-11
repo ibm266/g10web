@@ -8,7 +8,15 @@ import { SiteLogo } from "@/components/layout/SiteLogo";
 import { ROUTES } from "@/lib/routes";
 
 const navLinks = [
-  { label: "Weddings", href: ROUTES.weddingLanding },
+  {
+    label: "Weddings",
+    href: ROUTES.weddingLanding,
+    children: [
+      { label: "Wedding photographer in Aruba", href: ROUTES.weddingLanding },
+      { label: "The wedding experience", href: ROUTES.photographyWedding },
+      { label: "Destination weddings worldwide", href: ROUTES.photographyDestinationWeddings },
+    ],
+  },
   {
     label: "Portfolio",
     href: ROUTES.portfolio,
@@ -31,11 +39,13 @@ type Props = {
 
 export function MobileNavDrawer({ open, onClose }: Props) {
   const [portfolioOpen, setPortfolioOpen] = useState(false);
+  const [weddingsOpen, setWeddingsOpen] = useState(false);
   const reduced = useReducedMotion();
 
   useEffect(() => {
     if (!open) {
       setPortfolioOpen(false);
+      setWeddingsOpen(false);
       return;
     }
     const onKey = (e: KeyboardEvent) => {

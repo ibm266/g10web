@@ -56,23 +56,47 @@ export function GalleryTile({
   );
 }
 
-export function filmstripTileClassName(item: Pick<GalleryItem, "isLandscape">): string {
+export function filmstripTileClassName(
+  item: Pick<GalleryItem, "isLandscape">,
+  size: "default" | "large" = "default",
+): string {
+  if (size === "large") {
+    if (item.isLandscape) {
+      return "relative h-[62vw] max-h-[22rem] w-[96vw] shrink-0 snap-center overflow-hidden rounded-2xl bg-border/30 md:h-[26rem] md:w-[44rem]";
+    }
+    return "relative h-[72vw] max-h-[28rem] w-[88vw] shrink-0 snap-center overflow-hidden rounded-2xl bg-border/30 md:h-[28rem] md:w-[22rem]";
+  }
+
   if (item.isLandscape) {
     return "relative h-[52vw] max-h-64 w-[92vw] shrink-0 snap-center overflow-hidden rounded-2xl bg-border/30 md:h-72 md:w-[36rem]";
   }
   return "relative h-56 w-[78vw] shrink-0 snap-center overflow-hidden rounded-2xl bg-border/30 md:h-72 md:w-80";
 }
 
-export function FilmstripTile({ item }: { item: GalleryItem }) {
+export function FilmstripTile({
+  item,
+  size = "default",
+}: {
+  item: GalleryItem;
+  size?: "default" | "large";
+}) {
   return (
-    <div className={filmstripTileClassName(item)}>
+    <div className={filmstripTileClassName(item, size)}>
       <PhotoImage
         src={item.src}
         alt=""
         fill
         focalX={item.focalX}
         focalY={item.focalY}
-        sizes={item.isLandscape ? "92vw" : "78vw"}
+        sizes={
+          size === "large"
+            ? item.isLandscape
+              ? "96vw"
+              : "88vw"
+            : item.isLandscape
+              ? "92vw"
+              : "78vw"
+        }
       />
     </div>
   );

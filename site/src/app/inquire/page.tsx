@@ -66,8 +66,8 @@ export default function InquireRouterPage() {
           ))}
         </Container>
       </Section>
-      <Section className="!py-12">
-        <TestimonialCarousel compact />
+      <Section className="!pt-6 !pb-14 md:!pt-8 md:!pb-16">
+        <TestimonialCarousel />
       </Section>
       <PlanningGuideCTA />
       <SiteFooter />

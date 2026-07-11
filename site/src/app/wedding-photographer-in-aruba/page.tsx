@@ -6,7 +6,6 @@ import { HeroKenBurns } from "@/components/hero/HeroKenBurns";
 import { FeaturedMarquee } from "@/components/sections/FeaturedMarquee";
 import { Filmstrip } from "@/components/sections/GalleryGrid";
 import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
-import { ReviewsClaim } from "@/components/sections/ReviewsClaim";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { DarkCTA } from "@/components/sections/CTA";
 import { Container, Section } from "@/components/ui/Section";
@@ -83,7 +82,7 @@ export default function WeddingLandingPage() {
             See the happy faces <span className="italic">live here</span>
           </SectionHeading>
         </Container>
-        <Filmstrip items={slotGalleryItems("wedding-landing", "filmstrip")} />
+        <Filmstrip items={slotGalleryItems("wedding-landing", "filmstrip")} size="large" />
         <Container>
           <ArrowLink href={ROUTES.portfolio} className="mt-6">
             Browse the full portfolio
@@ -110,18 +109,8 @@ export default function WeddingLandingPage() {
           </div>
         </Container>
       </Section>
-      <Section>
-        <Container>
-          <SectionHeading>
-            Checkout the reviews <span className="italic">I have</span>
-          </SectionHeading>
-          <div className="mt-4">
-            <ReviewsClaim variant="compact" />
-          </div>
-        </Container>
-        <div className="mt-6">
-          <TestimonialCarousel compact />
-        </div>
+      <Section className="!pt-6 !pb-14 md:!pt-8 md:!pb-16">
+        <TestimonialCarousel />
       </Section>
       <Section>
         <FAQAccordion items={faq} />

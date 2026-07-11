@@ -11,6 +11,7 @@ export const ROUTES = {
   videographyWedding: "/videography/wedding-in-aruba",
   portfolio: "/portfolio",
   portfolioWeddings: "/portfolio/weddings",
+  photographyDestinationWeddings: "/photography/destination-weddings",
   inquire: "/inquire",
   inquireWedding: "/inquire/wedding",
   inquireSession: "/inquire/session",

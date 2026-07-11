@@ -1,11 +1,11 @@
+import type { ReactNode } from "react";
 import { PhotoImage } from "@/components/ui/PhotoImage";
-import { StarRating } from "@/components/ui/StarRating";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { StickyInquireBar } from "@/components/layout/StickyInquireBar";
 import { HeroKenBurns } from "@/components/hero/HeroKenBurns";
 import { FeaturedMarquee } from "@/components/sections/FeaturedMarquee";
-import { ReviewsClaim } from "@/components/sections/ReviewsClaim";
+import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
 import { WhyG10Grid } from "@/components/sections/WhyG10Grid";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { DarkCTA, PlanningGuideCTA } from "@/components/sections/CTA";
@@ -33,16 +33,35 @@ const guidedSteps = [
   { num: "04", title: "Et Violà, Your Final Gallery 🖼️", body: "Your personal online gallery with download, print, and album options through G10 Studio Shop." },
 ];
 
+type HeadlineLine = { text: string; italic?: boolean; gold?: boolean };
+
 type Props = {
   eyebrow?: string;
+  headline?: HeadlineLine[];
   portfolioLink?: string;
+  weddingGalleryLink?: string;
   imagePage?: string;
+  galleryHeading?: ReactNode;
 };
+
+const defaultHeadline: HeadlineLine[] = [
+  { text: "Luxury", italic: true, gold: true },
+  { text: "wedding photographer" },
+  { text: "in Aruba" },
+];
 
 export function PhotographyWeddingTemplate({
   eyebrow = "The wedding experience",
-  portfolioLink = ROUTES.portfolioWeddings,
+  headline = defaultHeadline,
+  portfolioLink = ROUTES.portfolio,
+  weddingGalleryLink = ROUTES.portfolioWeddings,
   imagePage = "photography-wedding",
+  galleryHeading = (
+    <>
+      Capturing your special moments with{" "}
+      <span className="italic">Aruba wedding photography</span>
+    </>
+  ),
 }: Props) {
   const styleBlocks = [
     {
@@ -73,11 +92,7 @@ export function PhotographyWeddingTemplate({
       <HeroKenBurns
         page={imagePage}
         eyebrow={eyebrow}
-        headline={[
-          { text: "Luxury", italic: true, gold: true },
-          { text: "wedding photographer" },
-          { text: "in Aruba" },
-        ]}
+        headline={headline}
         subline="Moments like these only last for a second… but the memories last forever."
         ctas={[
           { label: "Check my date", href: ROUTES.inquire },
@@ -134,13 +149,12 @@ export function PhotographyWeddingTemplate({
       <Section>
         <Container>
           <SectionHeading>
-            Capturing your special moments with{" "}
-            <span className="italic">Aruba wedding photography</span>
+            {galleryHeading}
           </SectionHeading>
         </Container>
         <Filmstrip items={slotGalleryItems(imagePage, "gallery")} />
         <Container>
-          <ArrowLink href={portfolioLink} className="mt-6">
+          <ArrowLink href={weddingGalleryLink} className="mt-6">
             See the full wedding portfolio
           </ArrowLink>
         </Container>
@@ -155,27 +169,11 @@ export function PhotographyWeddingTemplate({
       <Section>
         <FAQAccordion items={weddingFaq} />
       </Section>
-      <Section>
-        <Container narrow>
-          <ReviewsClaim variant="centered" />
-        </Container>
+      <Section className="!pt-6 !pb-14 md:!pt-8 md:!pb-16">
+        <TestimonialCarousel />
       </Section>
       <Section>
         <WhyG10Grid textOnly />
-      </Section>
-      <Section className="!py-12 bg-[#f3ede2]">
-        <Container narrow className="text-center">
-          <StarRating size="lg" className="justify-center" />
-          <p className="mt-4 font-display text-4xl font-bold uppercase tracking-wider text-accent">
-            HE IS MAGIC!
-          </p>
-          <blockquote className="mt-6 font-display text-2xl italic">
-            Jiten captured our day perfectly: fun, professional, and absolutely magical.
-          </blockquote>
-          <p className="mt-4 text-sm uppercase tracking-wider text-text-muted">
-            Mike & Carissa Scarfo
-          </p>
-        </Container>
       </Section>
       <DarkCTA
         title="Inquire for the wedding experience"

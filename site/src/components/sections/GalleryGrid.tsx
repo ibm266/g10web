@@ -77,11 +77,13 @@ export function GalleryGrid({
 export function Filmstrip({
   images,
   items,
+  size = "default",
 }: {
   page?: string;
   slot?: string;
   images?: string[];
   items?: GalleryItem[];
+  size?: "default" | "large";
 }) {
   const tiles =
     items ??
@@ -144,11 +146,16 @@ export function Filmstrip({
 
   if (tiles.length === 0) return null;
 
+  const scrollPadding =
+    size === "large"
+      ? "px-[max(1.25rem,calc(50%-44vw))] md:px-[max(3rem,calc(50%-11rem))]"
+      : "px-[max(1.25rem,calc(50%-39vw))] md:px-[max(3rem,calc(50%-10rem))]";
+
   return (
     <div>
       <div
         ref={scrollRef}
-        className="scrollbar-hide flex snap-x snap-mandatory scroll-smooth gap-3 overflow-x-auto px-[max(1.25rem,calc(50%-39vw))] pb-2 md:px-[max(3rem,calc(50%-10rem))]"
+        className={`scrollbar-hide flex snap-x snap-mandatory scroll-smooth gap-3 overflow-x-auto pb-2 ${scrollPadding}`}
       >
         {tiles.map((item, i) => (
           <div
@@ -157,7 +164,7 @@ export function Filmstrip({
               itemRefs.current[i] = el;
             }}
           >
-            <FilmstripTile item={item} />
+            <FilmstripTile item={item} size={size} />
           </div>
         ))}
       </div>
