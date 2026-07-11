@@ -4,18 +4,21 @@ import { REVIEW_PRIMARY_URL } from "./reviews";
 export const testimonials = [
   {
     text: "He was the perfect photographer to capture our big day. From the moment we had our first Zoom call, I totally vibed with his energy. Jiten brought so much fun and energy to the day, making everyone feel comfortable and relaxed in front of the camera.",
+    highlight: "making everyone feel comfortable and relaxed in front of the camera",
     name: "Annamarie & Anthony Vanderstar",
     venue: "Eagle Beach, The Little One Aruba",
     year: "2024",
   },
   {
     text: "Thank you so much for capturing our day perfectly. We felt so heard and understood and you made us both feel at ease. We couldn't be happier with the results and with our experience with you! It truly felt like we were hanging with a friend.",
+    highlight: "It truly felt like we were hanging with a friend",
     name: "Zach & Rachel Heil",
     venue: "Marriott Stellaris Aruba",
     year: "2024",
   },
   {
     text: "Our best investment was working with G10 Studio. Jiten was so incredibly easy to work with, fun, and professional. He has us laughing the entire time. He has an incredible eye for detail and I am so grateful that he was able to capture such a special time for us.",
+    highlight: "Our best investment was working with G10 Studio",
     name: "Erin & William Wesnofske",
     venue: "Marriott Stellaris Aruba",
     year: "2024",

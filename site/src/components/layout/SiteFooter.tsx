@@ -30,9 +30,11 @@ const footerLinks = {
 function LinkColumn({
   title,
   links,
+  external = false,
 }: {
   title: string;
   links: { label: string; href: string }[];
+  external?: boolean;
 }) {
   return (
     <div>
@@ -42,9 +44,20 @@ function LinkColumn({
       <ul className="space-y-1.5">
         {links.map((l) => (
           <li key={l.label}>
-            <Link href={l.href} className="text-sm text-text-on-dark/80 hover:text-highlight">
-              {l.label}
-            </Link>
+            {external ? (
+              <a
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-text-on-dark/80 hover:text-highlight"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link href={l.href} className="text-sm text-text-on-dark/80 hover:text-highlight">
+                {l.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
@@ -58,50 +71,37 @@ export function SiteFooter({ condensed = false }: { condensed?: boolean }) {
       <Container className="py-10 md:py-12">
         {!condensed && (
           <div className="grid gap-8 md:grid-cols-2 md:gap-12">
-            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
               <LinkColumn title="Photography" links={footerLinks.photography} />
               <LinkColumn title="Videography" links={footerLinks.videography} />
               <LinkColumn title="Explore" links={footerLinks.explore} />
+              <LinkColumn
+                title="Reviews"
+                external
+                links={reviewPlatforms.map((platform) => ({
+                  label: platform.name,
+                  href: platform.url,
+                }))}
+              />
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
-              <div>
-                <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
-                  Reviews
-                </h3>
-                <ul className="space-y-1.5">
-                  {reviewPlatforms.map((platform) => (
-                    <li key={platform.name}>
-                      <a
-                        href={platform.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-text-on-dark/80 hover:text-highlight"
-                      >
-                        {platform.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
-                  Subscribe
-                </h3>
-                <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-                  <input
-                    type="email"
-                    placeholder="Your email"
-                    className="h-11 min-w-0 flex-1 rounded-full border border-white/20 bg-bg-dark-2 px-4 text-sm text-text-on-dark placeholder:text-text-on-dark/50"
-                  />
-                  <button
-                    type="submit"
-                    className="h-11 shrink-0 rounded-full bg-accent px-5 text-sm font-medium text-text-on-dark"
-                  >
-                    Join
-                  </button>
-                </form>
-              </div>
+            <div>
+              <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
+                Subscribe
+              </h3>
+              <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="h-11 min-w-0 flex-1 rounded-full border border-white/20 bg-bg-dark-2 px-4 text-sm text-text-on-dark placeholder:text-text-on-dark/50"
+                />
+                <button
+                  type="submit"
+                  className="h-11 shrink-0 rounded-full bg-accent px-5 text-sm font-medium text-text-on-dark"
+                >
+                  Join
+                </button>
+              </form>
             </div>
           </div>
         )}

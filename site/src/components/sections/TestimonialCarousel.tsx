@@ -6,6 +6,23 @@ import { StarRatingReveal } from "@/components/ui/StarRating";
 import { testimonials } from "@/lib/content";
 import { REVIEW_PRIMARY_URL, REVIEW_STATS, reviewPlatforms } from "@/lib/reviews";
 
+function HighlightedQuote({ text, highlight }: { text: string; highlight?: string }) {
+  if (!highlight) return text;
+
+  const [before, after] = text.split(highlight);
+  if (after == null) return text;
+
+  return (
+    <>
+      {before}
+      <span className="text-[1.12em] italic text-accent-deep md:text-[1.15em]">
+        {highlight}
+      </span>
+      {after}
+    </>
+  );
+}
+
 export function TestimonialCarousel({ compact = false }: { compact?: boolean }) {
   const [index, setIndex] = useState(0);
   const [count, setCount] = useState<number>(REVIEW_STATS.count);
@@ -34,7 +51,9 @@ export function TestimonialCarousel({ compact = false }: { compact?: boolean }) 
   if (compact) {
     return (
       <Container>
-        <blockquote className="font-display text-xl italic leading-snug">{t.text}</blockquote>
+        <blockquote className="font-display text-xl italic leading-snug">
+          <HighlightedQuote text={t.text} highlight={t.highlight} />
+        </blockquote>
         <p className="mt-3 text-sm text-text-muted">{t.name}</p>
       </Container>
     );
@@ -72,7 +91,7 @@ export function TestimonialCarousel({ compact = false }: { compact?: boolean }) 
         </span>
 
         <blockquote className="relative min-h-[140px] font-display text-[23px] italic leading-snug md:text-[30px] md:leading-tight">
-          {t.text}
+          <HighlightedQuote text={t.text} highlight={t.highlight} />
         </blockquote>
         <p className="relative mt-4 text-[13px] font-medium uppercase tracking-wider text-text-muted">
           {t.name}

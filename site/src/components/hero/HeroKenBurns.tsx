@@ -33,6 +33,7 @@ export function HeroKenBurns({
   scrollDial = false,
 }: Props) {
   const [slide, setSlide] = useState(0);
+  const [hasScrolled, setHasScrolled] = useState(false);
   const slides = slotGalleryItems(page, slot);
 
   useEffect(() => {
@@ -40,6 +41,16 @@ export function HeroKenBurns({
     const id = setInterval(() => setSlide((s) => (s + 1) % slides.length), 6000);
     return () => clearInterval(id);
   }, [slides.length]);
+
+  useEffect(() => {
+    if (!tall || !scrollDial) return;
+
+    const onScroll = () => setHasScrolled(window.scrollY > 16);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollDial, tall]);
 
   return (
     <section
@@ -89,7 +100,11 @@ export function HeroKenBurns({
       </div>
 
       {tall && (
-        <p className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2 text-[11px] uppercase tracking-[0.18em] text-text-on-dark/70">
+        <p
+          className={`absolute bottom-4 left-1/2 z-10 -translate-x-1/2 text-[11px] uppercase tracking-[0.18em] text-text-on-dark/70 transition-opacity duration-500 ${
+            hasScrolled ? "opacity-0" : "opacity-100"
+          }`}
+        >
           Scroll
         </p>
       )}
