@@ -1,0 +1,286 @@
+{
+  "squarespaceVideos": [
+    {
+      "id": "177718bd-1544-4927-a76f-e3b0941a844a",
+      "type": "squarespace-native",
+      "alexandriaUrlTemplate": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/177718bd-1544-4927-a76f-e3b0941a844a/{variant}",
+      "urlsByResolution": {
+        "1920:1080": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/177718bd-1544-4927-a76f-e3b0941a844a/1920:1080",
+        "640:360": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/177718bd-1544-4927-a76f-e3b0941a844a/640:360"
+      },
+      "durationSeconds": 389.8895,
+      "aspectRatio": 1.7777777777777777,
+      "sourcePages": [
+        "portfolio/videography/videography__wedding-in-aruba.html",
+        "portfolio/videography/video-portfolio__wedding-pre-wedding-videos.html"
+      ],
+      "captions": [
+        "Wedding Ceremony at the Ritz Carlton Aruba, followed by Marriott Stellaris Aruba, Professional Wedding Videographer",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony",
+        "Renaissance Private Island Flamingo beach. videographer aruba wedding video. Filmed and edited by Aruba Videographer G10 Studio.",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony Teaser Trailer",
+        "Official wedding trailer aruba wedding videographer. Proposal, engagement, destination wedding video. Filmed and edited by Aruba Videographer G10 Studio."
+      ]
+    },
+    {
+      "id": "1ce08127-54ad-444e-b94e-0a86caba9aca",
+      "type": "squarespace-native",
+      "alexandriaUrlTemplate": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/1ce08127-54ad-444e-b94e-0a86caba9aca/{variant}",
+      "urlsByResolution": {
+        "1920:1080": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/1ce08127-54ad-444e-b94e-0a86caba9aca/1920:1080",
+        "640:360": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/1ce08127-54ad-444e-b94e-0a86caba9aca/640:360"
+      },
+      "durationSeconds": 63.521792,
+      "aspectRatio": 1.7777777777777777,
+      "sourcePages": [
+        "blog/blog__best-aruba-wedding-videographer-2026.html"
+      ],
+      "captions": []
+    },
+    {
+      "id": "4a122263-0159-4f17-a239-ea2aebb45672",
+      "type": "squarespace-native",
+      "alexandriaUrlTemplate": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/4a122263-0159-4f17-a239-ea2aebb45672/{variant}",
+      "urlsByResolution": {
+        "1920:1080": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/4a122263-0159-4f17-a239-ea2aebb45672/1920:1080",
+        "640:360": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/4a122263-0159-4f17-a239-ea2aebb45672/640:360"
+      },
+      "durationSeconds": 44.002292,
+      "aspectRatio": 1.7777777777777777,
+      "sourcePages": [
+        "blog/blog__professional-event-videography.html"
+      ],
+      "captions": []
+    },
+    {
+      "id": "4dc1b8f9-71f2-4b9c-a46e-d352e10f4cca",
+      "type": "squarespace-native",
+      "alexandriaUrlTemplate": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/4dc1b8f9-71f2-4b9c-a46e-d352e10f4cca/{variant}",
+      "urlsByResolution": {
+        "1080:1920": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/4dc1b8f9-71f2-4b9c-a46e-d352e10f4cca/1080:1920",
+        "360:640": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/4dc1b8f9-71f2-4b9c-a46e-d352e10f4cca/360:640"
+      },
+      "durationSeconds": 111.236125,
+      "aspectRatio": 0.5625,
+      "sourcePages": [
+        "portfolio/photo-portfolio-g10-studio-photographer__destination-weddings-aruba-and-worldwide-photographer.html",
+        "portfolio/portfolios.html",
+        "portfolio/photography/photography__wedding-in-aruba.html"
+      ],
+      "captions": []
+    },
+    {
+      "id": "5810e373-61a4-48b8-83e5-cbf7e7f6455e",
+      "type": "squarespace-native",
+      "alexandriaUrlTemplate": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/5810e373-61a4-48b8-83e5-cbf7e7f6455e/{variant}",
+      "urlsByResolution": {
+        "2416:1080": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/5810e373-61a4-48b8-83e5-cbf7e7f6455e/2416:1080",
+        "806:360": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/5810e373-61a4-48b8-83e5-cbf7e7f6455e/806:360"
+      },
+      "durationSeconds": 92.050292,
+      "aspectRatio": 2.237037037037037,
+      "sourcePages": [
+        "portfolio/videography/videography__wedding-in-aruba.html",
+        "portfolio/videography/video-portfolio__wedding-pre-wedding-videos.html"
+      ],
+      "captions": [
+        "Wedding Ceremony at the Ritz Carlton Aruba, followed by Marriott Stellaris Aruba, Professional Wedding Videographer",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony",
+        "Renaissance Private Island Flamingo beach. videographer aruba wedding video. Filmed and edited by Aruba Videographer G10 Studio.",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony Teaser Trailer",
+        "Official wedding trailer aruba wedding videographer. Proposal, engagement, destination wedding video. Filmed and edited by Aruba Videographer G10 Studio."
+      ]
+    },
+    {
+      "id": "6a75a2fd-28c2-4a09-851b-92f341253a77",
+      "type": "squarespace-native",
+      "alexandriaUrlTemplate": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/6a75a2fd-28c2-4a09-851b-92f341253a77/{variant}",
+      "urlsByResolution": {
+        "1920:1080": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/6a75a2fd-28c2-4a09-851b-92f341253a77/1920:1080",
+        "640:360": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/6a75a2fd-28c2-4a09-851b-92f341253a77/640:360"
+      },
+      "durationSeconds": 92.1921,
+      "aspectRatio": 1.7777777777777777,
+      "sourcePages": [
+        "portfolio/videography/videography__wedding-in-aruba.html",
+        "portfolio/videography/video-portfolio__wedding-pre-wedding-videos.html"
+      ],
+      "captions": [
+        "Wedding Ceremony at the Ritz Carlton Aruba, followed by Marriott Stellaris Aruba, Professional Wedding Videographer",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony",
+        "Renaissance Private Island Flamingo beach. videographer aruba wedding video. Filmed and edited by Aruba Videographer G10 Studio.",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony Teaser Trailer",
+        "Official wedding trailer aruba wedding videographer. Proposal, engagement, destination wedding video. Filmed and edited by Aruba Videographer G10 Studio."
+      ]
+    },
+    {
+      "id": "8d2bff51-d1ce-470e-8b02-330199660f6e",
+      "type": "squarespace-native",
+      "alexandriaUrlTemplate": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/8d2bff51-d1ce-470e-8b02-330199660f6e/{variant}",
+      "urlsByResolution": {
+        "1920:1080": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/8d2bff51-d1ce-470e-8b02-330199660f6e/1920:1080",
+        "640:360": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/8d2bff51-d1ce-470e-8b02-330199660f6e/640:360"
+      },
+      "durationSeconds": 207.415542,
+      "aspectRatio": 1.7777777777777777,
+      "sourcePages": [
+        "portfolio/videography/videography__wedding-in-aruba.html",
+        "portfolio/videography/video-portfolio__wedding-pre-wedding-videos.html"
+      ],
+      "captions": [
+        "Wedding Ceremony at the Ritz Carlton Aruba, followed by Marriott Stellaris Aruba, Professional Wedding Videographer",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony",
+        "Renaissance Private Island Flamingo beach. videographer aruba wedding video. Filmed and edited by Aruba Videographer G10 Studio.",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony Teaser Trailer",
+        "Official wedding trailer aruba wedding videographer. Proposal, engagement, destination wedding video. Filmed and edited by Aruba Videographer G10 Studio."
+      ]
+    },
+    {
+      "id": "a1dc4ff4-a81c-476d-aee6-51944eb4945d",
+      "type": "squarespace-native",
+      "alexandriaUrlTemplate": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/a1dc4ff4-a81c-476d-aee6-51944eb4945d/{variant}",
+      "urlsByResolution": {
+        "1920:1080": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/a1dc4ff4-a81c-476d-aee6-51944eb4945d/1920:1080",
+        "640:360": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/a1dc4ff4-a81c-476d-aee6-51944eb4945d/640:360"
+      },
+      "durationSeconds": 63.521792,
+      "aspectRatio": 1.7777777777777777,
+      "sourcePages": [
+        "portfolio/videography/videography__wedding-in-aruba.html",
+        "portfolio/videography/video-portfolio__wedding-pre-wedding-videos.html"
+      ],
+      "captions": [
+        "Wedding Ceremony at the Ritz Carlton Aruba, followed by Marriott Stellaris Aruba, Professional Wedding Videographer",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony",
+        "Renaissance Private Island Flamingo beach. videographer aruba wedding video. Filmed and edited by Aruba Videographer G10 Studio.",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony Teaser Trailer",
+        "Official wedding trailer aruba wedding videographer. Proposal, engagement, destination wedding video. Filmed and edited by Aruba Videographer G10 Studio."
+      ]
+    },
+    {
+      "id": "d97773c9-08a0-4ed2-a6d2-e83146945232",
+      "type": "squarespace-native",
+      "alexandriaUrlTemplate": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/d97773c9-08a0-4ed2-a6d2-e83146945232/{variant}",
+      "urlsByResolution": {
+        "1920:1080": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/d97773c9-08a0-4ed2-a6d2-e83146945232/1920:1080",
+        "640:360": "https://video.squarespace-cdn.com/content/v1/63b6fd7ba3355c088a58662f/d97773c9-08a0-4ed2-a6d2-e83146945232/640:360"
+      },
+      "durationSeconds": 395.520125,
+      "aspectRatio": 1.7777777777777777,
+      "sourcePages": [
+        "portfolio/videography/videography__wedding-in-aruba.html",
+        "portfolio/videography/video-portfolio__wedding-pre-wedding-videos.html"
+      ],
+      "captions": [
+        "Wedding Ceremony at the Ritz Carlton Aruba, followed by Marriott Stellaris Aruba, Professional Wedding Videographer",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony",
+        "Renaissance Private Island Flamingo beach. videographer aruba wedding video. Filmed and edited by Aruba Videographer G10 Studio.",
+        "video aruba videographer wedding Proposal, engagement, pre-wedding video. Filmed and edited by Aruba Videographer G10 Studio. Marriott Stellaris Aruba Wedding Ceremony Teaser Trailer",
+        "Official wedding trailer aruba wedding videographer. Proposal, engagement, destination wedding video. Filmed and edited by Aruba Videographer G10 Studio."
+      ]
+    }
+  ],
+  "embeds": [
+    {
+      "url": "https://www.vimeo.com/g10studio",
+      "type": "vimeo",
+      "sourcePage": "portfolio/videography/video-portfolio-g10-studio-wedding-videographer.html"
+    },
+    {
+      "url": "https://www.vimeo.com/g10studio",
+      "type": "vimeo",
+      "sourcePage": "portfolio/videography/videography.html"
+    }
+  ],
+  "externalGalleries": {
+    "instagram": [
+      "http://instagram.com/g10.studio",
+      "https://www.instagram.com/g10.studio",
+      "https://www.instagram.com/g10.studio/",
+      "https://www.instagram.com/g10.studio?hl=af",
+      "https://www.instagram.com/g10.studio?hl=am-et",
+      "https://www.instagram.com/g10.studio?hl=ar",
+      "https://www.instagram.com/g10.studio?hl=bg",
+      "https://www.instagram.com/g10.studio?hl=bn",
+      "https://www.instagram.com/g10.studio?hl=cs",
+      "https://www.instagram.com/g10.studio?hl=da",
+      "https://www.instagram.com/g10.studio?hl=de",
+      "https://www.instagram.com/g10.studio?hl=el",
+      "https://www.instagram.com/g10.studio?hl=en",
+      "https://www.instagram.com/g10.studio?hl=en-gb",
+      "https://www.instagram.com/g10.studio?hl=es",
+      "https://www.instagram.com/g10.studio?hl=es-la",
+      "https://www.instagram.com/g10.studio?hl=fa",
+      "https://www.instagram.com/g10.studio?hl=fi",
+      "https://www.instagram.com/g10.studio?hl=fr",
+      "https://www.instagram.com/g10.studio?hl=fr-ca",
+      "https://www.instagram.com/g10.studio?hl=gu",
+      "https://www.instagram.com/g10.studio?hl=ha-ng",
+      "https://www.instagram.com/g10.studio?hl=he",
+      "https://www.instagram.com/g10.studio?hl=hi",
+      "https://www.instagram.com/g10.studio?hl=hr",
+      "https://www.instagram.com/g10.studio?hl=hu",
+      "https://www.instagram.com/g10.studio?hl=id",
+      "https://www.instagram.com/g10.studio?hl=it",
+      "https://www.instagram.com/g10.studio?hl=ja",
+      "https://www.instagram.com/g10.studio?hl=kn",
+      "https://www.instagram.com/g10.studio?hl=ko",
+      "https://www.instagram.com/g10.studio?hl=ml",
+      "https://www.instagram.com/g10.studio?hl=mr",
+      "https://www.instagram.com/g10.studio?hl=ms",
+      "https://www.instagram.com/g10.studio?hl=nb",
+      "https://www.instagram.com/g10.studio?hl=ne",
+      "https://www.instagram.com/g10.studio?hl=nl",
+      "https://www.instagram.com/g10.studio?hl=om-et",
+      "https://www.instagram.com/g10.studio?hl=pa",
+      "https://www.instagram.com/g10.studio?hl=pl",
+      "https://www.instagram.com/g10.studio?hl=pt",
+      "https://www.instagram.com/g10.studio?hl=pt-br",
+      "https://www.instagram.com/g10.studio?hl=ro",
+      "https://www.instagram.com/g10.studio?hl=ru",
+      "https://www.instagram.com/g10.studio?hl=si",
+      "https://www.instagram.com/g10.studio?hl=sk",
+      "https://www.instagram.com/g10.studio?hl=sr",
+      "https://www.instagram.com/g10.studio?hl=sv",
+      "https://www.instagram.com/g10.studio?hl=sw-ke",
+      "https://www.instagram.com/g10.studio?hl=ta",
+      "https://www.instagram.com/g10.studio?hl=te",
+      "https://www.instagram.com/g10.studio?hl=th",
+      "https://www.instagram.com/g10.studio?hl=tl",
+      "https://www.instagram.com/g10.studio?hl=tr",
+      "https://www.instagram.com/g10.studio?hl=uk",
+      "https://www.instagram.com/g10.studio?hl=ur",
+      "https://www.instagram.com/g10.studio?hl=vi",
+      "https://www.instagram.com/g10.studio?hl=zh-cn",
+      "https://www.instagram.com/g10.studio?hl=zh-hk",
+      "https://www.instagram.com/g10.studio?hl=zh-tw"
+    ],
+    "pixieset": [
+      "https://g10studio.pixieset.com",
+      "https://g10studio.pixieset.com/alexisandtaylorweddingvideo",
+      "https://g10studio.pixieset.com/alyandaliza",
+      "https://g10studio.pixieset.com/caseytylerwedding",
+      "https://g10studio.pixieset.com/dianaandmarcweddingaruba071923",
+      "https://g10studio.pixieset.com/g10studioworldwideprintshop/store",
+      "https://g10studio.pixieset.com/julioanddennis",
+      "https://g10studio.pixieset.com/kathyanddavidelopement",
+      "https://g10studio.pixieset.com/lloyd-clarkewedding",
+      "https://g10studio.pixieset.com/mariaanddenniswedding",
+      "https://g10studio.pixieset.com/mrandmrsdetemple",
+      "https://g10studio.pixieset.com/mrandmrsheil",
+      "https://g10studio.pixieset.com/mrandmrsluiso",
+      "https://g10studio.pixieset.com/mrandmrsperez",
+      "https://g10studio.pixieset.com/mrandmrsruszin",
+      "https://g10studio.pixieset.com/mrandmrsscarfo",
+      "https://g10studio.pixieset.com/mrandmrssiciliano",
+      "https://g10studio.pixieset.com/mrandmrsvanderstar",
+      "https://g10studio.pixieset.com/mrandmrswesnofske",
+      "https://g10studio.pixieset.com/naheedandsebwedding"
+    ]
+  },
+  "stats": {
+    "squarespaceVideos": 9,
+    "embeds": 2,
+    "pixiesetGalleries": 20
+  }
+}

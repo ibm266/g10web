@@ -1,0 +1,135 @@
+{
+  "generatedFor": "G10 Studio \u2014 Claude Design",
+  "loadTier": "page_copy_lookup",
+  "instruction": "Load ONE contentFile at a time. Never bulk-read content/pages/.",
+  "corePages": {
+    "home": {
+      "id": "home",
+      "proposedPath": "/",
+      "legacyUrl": "https://www.g10.studio",
+      "title": "G10 Studio | Professional Aruba Photographer and Videographer",
+      "contentFile": "content/pages/home.md",
+      "imageCount": 108
+    },
+    "about": {
+      "id": "about",
+      "proposedPath": "/about-jiten-melwani-aruba-photographer",
+      "legacyUrl": "https://www.g10.studio/about-jiten-melwani-aruba-photographer",
+      "title": "Meet Jiten - Professional Photographer in Aruba-G10 Studio",
+      "contentFile": "content/pages/about.md",
+      "imageCount": 20
+    },
+    "wedding-landing": {
+      "id": "wedding-landing",
+      "proposedPath": "/wedding-photographer-in-aruba",
+      "legacyUrl": "https://www.g10.studio/wedding-photographer-in-aruba",
+      "title": "Landing Page-G10 Studio",
+      "contentFile": "content/pages/wedding-landing.md",
+      "imageCount": 50
+    },
+    "photography-hub": {
+      "id": "photography-hub",
+      "proposedPath": "/photography",
+      "legacyUrl": "https://www.g10.studio/photography",
+      "title": "Aruban Photographer Portfolio - Weddings, Families, Solo-G10 Studio",
+      "contentFile": "content/pages/photography-hub.md",
+      "imageCount": 4
+    },
+    "photography-wedding": {
+      "id": "photography-wedding",
+      "proposedPath": "/photography/wedding-in-aruba",
+      "legacyUrl": "https://www.g10.studio/photography/wedding-in-aruba",
+      "title": "Luxury Destination Wedding Photographer in Aruba - Meet Jiten! \u2014 G10 Studio",
+      "contentFile": "content/pages/photography-wedding.md",
+      "imageCount": 116
+    },
+    "photography-couple": {
+      "id": "photography-couple",
+      "proposedPath": "/photography/couple-in-aruba",
+      "legacyUrl": "https://www.g10.studio/photography/couple-in-aruba",
+      "title": "Couple Photography in Aruba - Proposals, Engagements, Anniversaries \u2014 G10 Studio",
+      "contentFile": "content/pages/photography-couple.md",
+      "imageCount": 98
+    },
+    "photography-family": {
+      "id": "photography-family",
+      "proposedPath": "/photography/family-in-aruba",
+      "legacyUrl": "https://www.g10.studio/photography/family-in-aruba",
+      "title": "Capture Joyful Family Moments with Aruba Photography \u2014 G10 Studio",
+      "contentFile": "content/pages/photography-family.md",
+      "imageCount": 95
+    },
+    "photography-solo": {
+      "id": "photography-solo",
+      "proposedPath": "/photography/solo-in-aruba",
+      "legacyUrl": "https://www.g10.studio/photography/solo-in-aruba",
+      "title": "Solo Photography in Aruba - Capture Your Moment \u2014 G10 Studio",
+      "contentFile": "content/pages/photography-solo.md",
+      "imageCount": 37
+    },
+    "videography-hub": {
+      "id": "videography-hub",
+      "proposedPath": "/videography",
+      "legacyUrl": "https://www.g10.studio/videography",
+      "title": "G10 Studio Aruba Professional Videographer Portfolio-G10 Studio",
+      "contentFile": "content/pages/videography-hub.md",
+      "imageCount": 1
+    },
+    "videography-wedding": {
+      "id": "videography-wedding",
+      "proposedPath": "/videography/wedding-in-aruba",
+      "legacyUrl": "https://www.g10.studio/videography/wedding-in-aruba",
+      "title": "Aruba Wedding Videography - Cherish Every Moment \u2014 G10 Studio",
+      "contentFile": "content/pages/videography-wedding.md",
+      "imageCount": 0
+    },
+    "portfolio-hub": {
+      "id": "portfolio-hub",
+      "proposedPath": "/portfolios",
+      "legacyUrl": "https://www.g10.studio/portfolios",
+      "title": "Luxury Destination Wedding Photographer in Aruba - Meet Jiten! \u2014 G10 Studio",
+      "contentFile": "content/pages/portfolio-hub.md",
+      "imageCount": 116
+    },
+    "portfolio-weddings": {
+      "id": "portfolio-weddings",
+      "proposedPath": "/photo-portfolio-g10-studio-photographer/destination-weddings-aruba-and-worldwide-photographer",
+      "legacyUrl": "https://www.g10.studio/photo-portfolio-g10-studio-photographer/destination-weddings-aruba-and-worldwide-photographer",
+      "title": "Luxury Destination Wedding Photographer in Aruba - Meet Jiten! \u2014 G10 Studio",
+      "contentFile": "content/pages/portfolio-weddings.md",
+      "imageCount": 116
+    },
+    "inquire-router": {
+      "id": "inquire-router",
+      "proposedPath": "/inquiry-decision-wedding-photoshoot",
+      "legacyUrl": "https://www.g10.studio/inquiry-decision-wedding-photoshoot",
+      "title": "Inquiry choice-G10 Studio",
+      "contentFile": "content/pages/inquire-router.md",
+      "imageCount": 35
+    },
+    "inquire-wedding": {
+      "id": "inquire-wedding",
+      "proposedPath": "/inquire-wedding-photography-g10-studio",
+      "legacyUrl": "https://www.g10.studio/inquire-wedding-photography-g10-studio",
+      "title": "Inquire for your Professional Photoshoot in Aruba-G10 Studio",
+      "contentFile": "content/pages/inquire-wedding.md",
+      "imageCount": 2
+    },
+    "inquire-general": {
+      "id": "inquire-general",
+      "proposedPath": "/inquire-to-book-your-photoshoot",
+      "legacyUrl": "https://www.g10.studio/inquire-to-book-your-photoshoot",
+      "title": "Inquire for your Professional Photoshoot in Aruba-G10 Studio",
+      "contentFile": "content/pages/inquire-general.md",
+      "imageCount": 20
+    },
+    "blog-index": {
+      "id": "blog-index",
+      "proposedPath": "/blog",
+      "legacyUrl": "https://www.g10.studio/blog",
+      "title": "Aruba Wedding Photography & Videography Blogs -G10 Studio",
+      "contentFile": "content/pages/blog-index.md",
+      "imageCount": 0
+    }
+  }
+}

@@ -1,0 +1,18 @@
+export const ROUTES = {
+  home: "/",
+  about: "/about-jiten-melwani-aruba-photographer",
+  weddingLanding: "/wedding-photographer-in-aruba",
+  photography: "/photography",
+  photographyWedding: "/photography/wedding-in-aruba",
+  photographyCouple: "/photography/couple-in-aruba",
+  photographyFamily: "/photography/family-in-aruba",
+  photographySolo: "/photography/solo-in-aruba",
+  videography: "/videography",
+  videographyWedding: "/videography/wedding-in-aruba",
+  portfolio: "/portfolio",
+  portfolioWeddings: "/portfolio/weddings",
+  inquire: "/inquire",
+  inquireWedding: "/inquire/wedding",
+  inquireSession: "/inquire/session",
+  blog: "/blog",
+} as const;

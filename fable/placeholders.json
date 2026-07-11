@@ -1,0 +1,166 @@
+{
+  "instruction": "Use ONLY these images for mockups. Do not browse scraped/assets/.",
+  "perPage": 4,
+  "pages": {
+    "home": {
+      "title": "G10 Studio | Professional Aruba Photographer and Videographer",
+      "contentFile": "content/pages/home.md",
+      "images": [
+        "placeholders/home/01.png",
+        "placeholders/home/02.jpg",
+        "placeholders/home/03.jpg",
+        "placeholders/home/04.png"
+      ]
+    },
+    "about": {
+      "title": "Meet Jiten - Professional Photographer in Aruba-G10 Studio",
+      "contentFile": "content/pages/about.md",
+      "images": [
+        "placeholders/about/01.jpg",
+        "placeholders/about/02.jpg",
+        "placeholders/about/03.jpeg"
+      ]
+    },
+    "wedding-landing": {
+      "title": "Landing Page-G10 Studio",
+      "contentFile": "content/pages/wedding-landing.md",
+      "images": [
+        "placeholders/wedding-landing/01.png",
+        "placeholders/wedding-landing/02.jpg",
+        "placeholders/wedding-landing/03.jpg",
+        "placeholders/wedding-landing/04.jpg"
+      ]
+    },
+    "photography-hub": {
+      "title": "Aruban Photographer Portfolio - Weddings, Families, Solo-G10 Studio",
+      "contentFile": "content/pages/photography-hub.md",
+      "images": [
+        "placeholders/photography-hub/01.jpg",
+        "placeholders/photography-hub/02.jpg",
+        "placeholders/photography-hub/03.jpg",
+        "placeholders/photography-hub/04.jpg"
+      ]
+    },
+    "photography-wedding": {
+      "title": "Luxury Destination Wedding Photographer in Aruba - Meet Jiten! \u2014 G10 Studio",
+      "contentFile": "content/pages/photography-wedding.md",
+      "images": [
+        "placeholders/photography-wedding/01.png",
+        "placeholders/photography-wedding/02.jpg",
+        "placeholders/photography-wedding/03.jpg",
+        "placeholders/photography-wedding/04.jpg"
+      ]
+    },
+    "photography-couple": {
+      "title": "Couple Photography in Aruba - Proposals, Engagements, Anniversaries \u2014 G10 Studio",
+      "contentFile": "content/pages/photography-couple.md",
+      "images": [
+        "placeholders/photography-couple/01.jpg",
+        "placeholders/photography-couple/02.jpg",
+        "placeholders/photography-couple/03.jpg",
+        "placeholders/photography-couple/04.jpg"
+      ]
+    },
+    "photography-family": {
+      "title": "Capture Joyful Family Moments with Aruba Photography \u2014 G10 Studio",
+      "contentFile": "content/pages/photography-family.md",
+      "images": [
+        "placeholders/photography-family/01.jpg",
+        "placeholders/photography-family/02.jpg",
+        "placeholders/photography-family/03.jpg",
+        "placeholders/photography-family/04.jpg"
+      ]
+    },
+    "photography-solo": {
+      "title": "Solo Photography in Aruba - Capture Your Moment \u2014 G10 Studio",
+      "contentFile": "content/pages/photography-solo.md",
+      "images": [
+        "placeholders/photography-solo/01.jpg",
+        "placeholders/photography-solo/02.jpg",
+        "placeholders/photography-solo/03.jpg",
+        "placeholders/photography-solo/04.jpg"
+      ]
+    },
+    "videography-hub": {
+      "title": "G10 Studio Aruba Professional Videographer Portfolio-G10 Studio",
+      "contentFile": "content/pages/videography-hub.md",
+      "images": [
+        "placeholders/videography-hub/01.jpg"
+      ]
+    },
+    "videography-wedding": {
+      "title": "Aruba Wedding Videography - Cherish Every Moment \u2014 G10 Studio",
+      "contentFile": "content/pages/videography-wedding.md",
+      "images": [
+        "placeholders/videography-wedding/01.png",
+        "placeholders/videography-wedding/02.jpg"
+      ]
+    },
+    "portfolio-hub": {
+      "title": "Luxury Destination Wedding Photographer in Aruba - Meet Jiten! \u2014 G10 Studio",
+      "contentFile": "content/pages/portfolio-hub.md",
+      "images": [
+        "placeholders/portfolio-hub/01.png",
+        "placeholders/portfolio-hub/02.jpg",
+        "placeholders/portfolio-hub/03.jpg",
+        "placeholders/portfolio-hub/04.jpg"
+      ]
+    },
+    "portfolio-weddings": {
+      "title": "Luxury Destination Wedding Photographer in Aruba - Meet Jiten! \u2014 G10 Studio",
+      "contentFile": "content/pages/portfolio-weddings.md",
+      "images": [
+        "placeholders/portfolio-weddings/01.png",
+        "placeholders/portfolio-weddings/02.jpg",
+        "placeholders/portfolio-weddings/03.jpg",
+        "placeholders/portfolio-weddings/04.jpg"
+      ]
+    },
+    "inquire-router": {
+      "title": "Inquiry choice-G10 Studio",
+      "contentFile": "content/pages/inquire-router.md",
+      "images": [
+        "placeholders/inquire-router/01.jpg",
+        "placeholders/inquire-router/02.jpg",
+        "placeholders/inquire-router/03.jpg",
+        "placeholders/inquire-router/04.jpg"
+      ]
+    },
+    "inquire-wedding": {
+      "title": "Inquire for your Professional Photoshoot in Aruba-G10 Studio",
+      "contentFile": "content/pages/inquire-wedding.md",
+      "images": [
+        "placeholders/inquire-wedding/01.jpg",
+        "placeholders/inquire-wedding/02.jpg"
+      ]
+    },
+    "inquire-general": {
+      "title": "Inquire for your Professional Photoshoot in Aruba-G10 Studio",
+      "contentFile": "content/pages/inquire-general.md",
+      "images": [
+        "placeholders/inquire-general/01.jpg",
+        "placeholders/inquire-general/02.jpeg"
+      ]
+    },
+    "blog-index": {
+      "title": "Aruba Wedding Photography & Videography Blogs -G10 Studio",
+      "contentFile": "content/pages/blog-index.md",
+      "images": [
+        "placeholders/blog-index/01.jpg",
+        "placeholders/blog-index/02.jpg",
+        "placeholders/blog-index/03.jpg",
+        "placeholders/blog-index/04.png"
+      ]
+    }
+  },
+  "shared": [
+    "placeholders/_shared/01.png",
+    "placeholders/_shared/02.jpg",
+    "placeholders/_shared/03.jpg",
+    "placeholders/_shared/04.png",
+    "placeholders/_shared/05.png",
+    "placeholders/_shared/06.jpg",
+    "placeholders/_shared/07.jpg",
+    "placeholders/_shared/08.jpg"
+  ]
+}

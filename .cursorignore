@@ -1,0 +1,6 @@
+# Keep agent index focused on design context, not raw scrape bulk
+scraped/html/
+scraped/assets/images/all/
+scraped/data/manifest.json
+INDEX.md
+sitemap.xml

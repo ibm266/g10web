@@ -1,0 +1,228 @@
+{
+  "home": {
+    "hero": [
+      "img_a3eb8f43b4",
+      "img_8d40659929",
+      "img_2fa75edb28",
+      "img_b2ca3e99fd"
+    ],
+    "service-wedding": [
+      "img_851ea4f6ea"
+    ],
+    "service-couple": [
+      "img_50c97c02aa"
+    ],
+    "service-family": [
+      "img_0512f3f12d"
+    ],
+    "meet-jiten": [
+      "img_9a8113ad03"
+    ],
+    "why-g10-0": [
+      "img_d7cbd7aaa7"
+    ],
+    "why-g10-1": [
+      "img_9260c96b8b"
+    ],
+    "why-g10-2": [
+      "img_3e6d7b5945"
+    ],
+    "why-g10-3": [
+      "img_c009600e9b"
+    ]
+  },
+  "about": {
+    "hero": [
+      "img_18cf3ba161"
+    ],
+    "story": [
+      "img_4f98d81af4"
+    ],
+    "filmstrip": [
+      "img_517db8bb31",
+      "img_d1cffad830",
+      "img_26965a5aab",
+      "img_4669ede739"
+    ]
+  },
+  "wedding-landing": {
+    "hero": [
+      "img_a91f25e586",
+      "img_ed7bc77643"
+    ],
+    "story": [
+      "img_c86121bcb6"
+    ],
+    "filmstrip": [
+      "img_a06b50358c",
+      "img_e6cd870d9a",
+      "img_0911d68697",
+      "img_07feccbcd4"
+    ]
+  },
+  "photography-hub": {
+    "wedding": [
+      "img_d50d46cb11"
+    ],
+    "family": [
+      "img_54f9e2bc12"
+    ],
+    "couple": [
+      "img_74181b790d"
+    ],
+    "solo": [
+      "img_e66fa6c956"
+    ]
+  },
+  "photography-wedding": {
+    "hero": [
+      "img_ea2fb34f12",
+      "img_de08fb54d0",
+      "img_cf6bae38af"
+    ],
+    "style-1": [
+      "img_bed6630abd"
+    ],
+    "style-2": [
+      "img_1f11a3bad4"
+    ],
+    "gallery": [
+      "img_2e1396297f",
+      "img_fc6967d606",
+      "img_a184fd20a5",
+      "img_aab0fdc578"
+    ]
+  },
+  "photography-couple": {
+    "hero": [
+      "img_749e7eb061",
+      "img_7d6769fc40"
+    ],
+    "gallery": [
+      "img_e96bdecd5b",
+      "img_2c7c6345da",
+      "img_1f84f95391"
+    ]
+  },
+  "photography-family": {
+    "hero": [
+      "img_310859aab7",
+      "img_73b304d94d"
+    ],
+    "gallery": [
+      "img_109de4cd0a",
+      "img_b95624b413",
+      "img_8c17a64dc4"
+    ]
+  },
+  "photography-solo": {
+    "hero": [
+      "img_2cbab5ff9e",
+      "img_2db90d827c"
+    ],
+    "gallery": [
+      "img_98a464996e",
+      "img_1540de4628",
+      "img_45366adf47"
+    ]
+  },
+  "videography-hub": {
+    "hero": [
+      "img_b94064ec54"
+    ]
+  },
+  "videography-wedding": {
+    "featured": [
+      "img_71d74feb1c"
+    ]
+  },
+  "portfolio-hub": {
+    "gallery-wedding": [
+      "img_264f50ea77",
+      "img_3059c80d8b",
+      "img_fb876dfbca",
+      "img_a7e9d045e6",
+      "img_1e39242580",
+      "img_a848cd7d30",
+      "img_8406836128",
+      "img_71b85476ca"
+    ],
+    "gallery-couple": [
+      "img_8094b049f0",
+      "img_25bd8d485a",
+      "img_5651734ade",
+      "img_32a4d30750",
+      "img_ef8813473f",
+      "img_5c71bac13b"
+    ],
+    "gallery-family": [
+      "img_b62a6f659e",
+      "img_0da3f2e471",
+      "img_70acc1101e",
+      "img_b2ad1c1a89",
+      "img_2bca08f9d0",
+      "img_ef072ef6fa"
+    ],
+    "gallery-solo": [
+      "img_d0da1228b9",
+      "img_c24e55cc9d",
+      "img_59f27d9880",
+      "img_8f2c3b1145"
+    ]
+  },
+  "portfolio-weddings": {
+    "hero": [
+      "img_1c3937dfa5",
+      "img_e619881149",
+      "img_4a4d43edfc"
+    ],
+    "style-1": [
+      "img_1bb03e1ea3"
+    ],
+    "style-2": [
+      "img_97d11bcd81"
+    ],
+    "gallery": [
+      "img_af39064dd1",
+      "img_8b0b253880",
+      "img_eb124309e3",
+      "img_730656df5a"
+    ]
+  },
+  "inquire-router": {
+    "wedding": [
+      "img_a0e8468ca6"
+    ],
+    "couple": [
+      "img_7bc2cb5d8d"
+    ],
+    "family": [
+      "img_6e7e53fae2"
+    ]
+  },
+  "inquire-wedding": {
+    "accent": [
+      "img_ef7e05d91b",
+      "img_4847214b17"
+    ]
+  },
+  "inquire-general": {
+    "accent": [
+      "img_a91fedc9a2",
+      "img_9276f8a527"
+    ]
+  },
+  "blog-index": {
+    "featured": [
+      "img_4774338fec"
+    ],
+    "posts": [
+      "img_1861a41a35",
+      "img_ec84f97848",
+      "img_805d07d945",
+      "img_0bd49d7c92",
+      "img_4c901b9563",
+      "img_4464d97127"
+    ]
+  }
+}

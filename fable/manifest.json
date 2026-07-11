@@ -1,0 +1,39 @@
+{
+  "project": "G10 Studio website redesign",
+  "folder": "fable/",
+  "for": "Claude Design — point at this folder only",
+  "tiers": {
+    "full_redesign_session": {
+      "description": "Paste PROMPT.md. Fable writes REDESIGN-PLAN.md (build handoff), then all 16 page mockups.",
+      "files": ["PROMPT.md", "design-1a.md", "BRIEF.md", "site-architecture.md", "core-pages.json", "REDESIGN-PLAN.md"],
+      "folders": ["screenshots/", "placeholders/"],
+      "outputs": ["REDESIGN-PLAN.md (filled)", "page mockups"]
+    },
+    "implementation_session": {
+      "description": "Build agent — implement site from Fable output.",
+      "readFirst": "BUILD.md",
+      "files": ["REDESIGN-PLAN.md", "core-pages.json"],
+      "pattern": "content/pages/{pageId}.md per page"
+    },
+    "design_session_start": {
+      "description": "Minimum context for homepage-only work.",
+      "files": ["design-1a.md", "BRIEF.md"],
+      "folders": ["screenshots/", "placeholders/home/"]
+    },
+    "per_page_design": {
+      "description": "One page at a time after plan exists.",
+      "files": ["page-briefs.md"],
+      "pattern": "content/pages/{pageId}.md + placeholders/{pageId}/"
+    },
+    "images_for_mockups": {
+      "description": "62 curated images — never use scraped/assets/",
+      "index": "placeholders.json",
+      "guide": "placeholders-guide.md"
+    },
+    "never_load_for_design": {
+      "description": "Token-heavy — implementation or blog phase only",
+      "folders": ["do-not-load/"],
+      "note": "Full photo library is in repo scraped/assets/ — not in fable/"
+    }
+  }
+}

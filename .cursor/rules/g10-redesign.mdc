@@ -1,0 +1,14 @@
+---
+description: G10 Studio website redesign context
+alwaysApply: true
+---
+
+# G10 Studio Redesign
+
+Redesign of g10.studio using scraped content in `scraped/`.
+
+For **Claude Design / Fable** sessions, point at **`fable/`** — start with `fable/CLAUDE.md` and `fable/BRIEF.md`.
+
+Do not bulk-load `fable/do-not-load/` or all files in `fable/content/pages/` during design.
+
+Implementation assets: `scraped/content/`, `scraped/assets/images/`.
