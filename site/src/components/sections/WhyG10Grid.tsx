@@ -71,7 +71,7 @@ export function WhyG10Grid({ textOnly = false }: { textOnly?: boolean }) {
 
       <div
         ref={scrollRef}
-        className="scrollbar-hide mt-8 flex items-stretch snap-x snap-mandatory scroll-smooth gap-4 overflow-x-auto px-[max(1.25rem,calc(50%-39vw))] pb-2 md:px-[max(3rem,calc(50%-10rem))]"
+        className="scrollbar-hide mt-8 flex items-stretch snap-x snap-mandatory scroll-smooth gap-4 overflow-x-auto px-[max(1.25rem,calc(50%-44vw))] pb-2 md:px-[max(3rem,calc(50%-12rem))]"
       >
         {whyG10Cards.map((card, i) => {
           const meta = slotImageMeta("home", WHY_G10_SLOTS[i]);
@@ -83,15 +83,19 @@ export function WhyG10Grid({ textOnly = false }: { textOnly?: boolean }) {
               ref={(el) => {
                 itemRefs.current[i] = el;
               }}
-              className="flex w-[85vw] shrink-0 snap-center md:w-80"
+              className="flex w-[88vw] shrink-0 snap-center md:w-96"
             >
               <article
                 className={`flex w-full flex-col overflow-hidden rounded-[20px] border border-border bg-surface ${
-                  textOnly ? "min-h-[300px]" : "min-h-[420px]"
+                  textOnly ? "min-h-[300px]" : ""
                 }`}
               >
                 {!textOnly && (
-                  <div className="relative h-44 shrink-0 bg-border/30">
+                  <div
+                    className={`relative w-full shrink-0 overflow-hidden bg-border/20 ${
+                      meta?.isLandscape ? "aspect-[3/2]" : "aspect-[2/3]"
+                    }`}
+                  >
                     <PhotoImage
                       src={meta?.src ?? ""}
                       alt=""
@@ -99,7 +103,7 @@ export function WhyG10Grid({ textOnly = false }: { textOnly?: boolean }) {
                       hoverZoom
                       focalX={meta?.focalX}
                       focalY={meta?.focalY}
-                      sizes="320px"
+                      sizes="(max-width: 768px) 88vw, 384px"
                     />
                   </div>
                 )}
