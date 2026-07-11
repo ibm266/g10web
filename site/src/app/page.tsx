@@ -10,9 +10,10 @@ import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
 import { WhyG10Grid } from "@/components/sections/WhyG10Grid";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { DarkCTA } from "@/components/sections/CTA";
-import { ReviewsClaim } from "@/components/sections/ReviewsClaim";
 import { Section } from "@/components/ui/Section";
+import { StarRating } from "@/components/ui/StarRating";
 import { homeFaq } from "@/lib/content";
+import { REVIEW_STATS } from "@/lib/reviews";
 import { ROUTES } from "@/lib/routes";
 
 export default function HomePage() {
@@ -29,8 +30,13 @@ export default function HomePage() {
         ]}
         subline={
           <span className="block">
-            Documentarian meets editorial ·{" "}
-            <ReviewsClaim variant="inline" dark className="mt-2" />
+            Documentarian meets editorial
+            <span className="mt-2 block text-text-on-dark/90">
+              {REVIEW_STATS.count}+ {REVIEW_STATS.shortLabel}
+            </span>
+            <span className="mt-1.5 flex">
+              <StarRating size="sm" className="text-hero-accent" />
+            </span>
           </span>
         }
         ctas={[

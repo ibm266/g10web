@@ -108,7 +108,7 @@ export const homeFaq = [
 
 export const whyG10Cards = [
   {
-    title: "250+ Testimonials",
+    title: "250+ five star Testimonials",
     body: "Because why take it from me? I'm proud to say I have Over 250+ 5-star reviews across 4 platforms and 6 years. Couples, Families & Friends alike all trust G10 Studio with their priceless memories!",
     cta: {
       label: "Read reviews for yourself",

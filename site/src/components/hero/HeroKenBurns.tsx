@@ -74,7 +74,7 @@ export function HeroKenBurns({
             {subline}
           </p>
         )}
-        <div className="mt-6 flex flex-wrap gap-3">
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
           {ctas.map((cta) => (
             <Button
               key={cta.label}

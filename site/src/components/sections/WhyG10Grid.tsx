@@ -104,14 +104,18 @@ export function WhyG10Grid({ textOnly = false }: { textOnly?: boolean }) {
                   </div>
                 )}
                 <div className="flex flex-1 flex-col p-5">
-                  <h3 className="font-display text-xl italic md:text-2xl">
+                  <h3 className="font-display text-xl md:text-2xl">
                     {isReviewsCard ? (
-                      <span className="flex flex-wrap items-center gap-2">
-                        <span>{REVIEW_STATS.count}+ Testimonials</span>
-                        <StarRating size="sm" />
-                      </span>
+                      <>
+                        <span className="block italic">
+                          {REVIEW_STATS.count}+ five star Testimonials
+                        </span>
+                        <span className="mt-2 flex w-full not-italic">
+                          <StarRating size="sm" />
+                        </span>
+                      </>
                     ) : (
-                      card.title
+                      <span className="italic">{card.title}</span>
                     )}
                   </h3>
                   <p className="mt-2 flex-1 text-sm leading-relaxed text-text-muted">{card.body}</p>
