@@ -22,93 +22,86 @@ const footerLinks = {
   explore: [
     { label: "Inquire", href: ROUTES.inquire },
     { label: "About", href: ROUTES.about },
+    { label: "Portfolio", href: ROUTES.portfolio },
+    { label: "Blog", href: ROUTES.blog },
   ],
 };
+
+function LinkColumn({
+  title,
+  links,
+}: {
+  title: string;
+  links: { label: string; href: string }[];
+}) {
+  return (
+    <div>
+      <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
+        {title}
+      </h3>
+      <ul className="space-y-1.5">
+        {links.map((l) => (
+          <li key={l.label}>
+            <Link href={l.href} className="text-sm text-text-on-dark/80 hover:text-highlight">
+              {l.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export function SiteFooter({ condensed = false }: { condensed?: boolean }) {
   return (
     <footer className="bg-bg-dark text-text-on-dark">
-      <Container className="py-16 md:py-20">
+      <Container className="py-10 md:py-12">
         {!condensed && (
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            <div>
-              <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
-                Photography
-              </h3>
-              <ul className="space-y-2">
-                {footerLinks.photography.map((l) => (
-                  <li key={l.label}>
-                    <Link href={l.href} className="text-sm text-text-on-dark/80 hover:text-highlight">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          <div className="grid gap-8 md:grid-cols-2 md:gap-12">
+            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+              <LinkColumn title="Photography" links={footerLinks.photography} />
+              <LinkColumn title="Videography" links={footerLinks.videography} />
+              <LinkColumn title="Explore" links={footerLinks.explore} />
             </div>
-            <div>
-              <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
-                Videography
-              </h3>
-              <ul className="space-y-2">
-                {footerLinks.videography.map((l) => (
-                  <li key={l.label}>
-                    <Link href={l.href} className="text-sm text-text-on-dark/80 hover:text-highlight">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
-                Explore
-              </h3>
-              <ul className="space-y-2">
-                {footerLinks.explore.map((l) => (
-                  <li key={l.label}>
-                    <Link href={l.href} className="text-sm text-text-on-dark/80 hover:text-highlight">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
-                Reviews
-              </h3>
-              <ul className="space-y-2">
-                {reviewPlatforms.map((platform) => (
-                  <li key={platform.name}>
-                    <a
-                      href={platform.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-text-on-dark/80 hover:text-highlight"
-                    >
-                      {platform.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
-                Subscribe
-              </h3>
-              <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="h-[52px] flex-1 rounded-full border border-white/20 bg-bg-dark-2 px-4 text-base text-text-on-dark placeholder:text-text-on-dark/50"
-                />
-                <button
-                  type="submit"
-                  className="h-[52px] rounded-full bg-accent px-5 text-sm font-medium text-text-on-dark"
-                >
-                  Join
-                </button>
-              </form>
+
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div>
+                <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
+                  Reviews
+                </h3>
+                <ul className="space-y-1.5">
+                  {reviewPlatforms.map((platform) => (
+                    <li key={platform.name}>
+                      <a
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-text-on-dark/80 hover:text-highlight"
+                      >
+                        {platform.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-highlight">
+                  Subscribe
+                </h3>
+                <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    className="h-11 min-w-0 flex-1 rounded-full border border-white/20 bg-bg-dark-2 px-4 text-sm text-text-on-dark placeholder:text-text-on-dark/50"
+                  />
+                  <button
+                    type="submit"
+                    className="h-11 shrink-0 rounded-full bg-accent px-5 text-sm font-medium text-text-on-dark"
+                  >
+                    Join
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         )}
@@ -129,12 +122,14 @@ export function SiteFooter({ condensed = false }: { condensed?: boolean }) {
           </div>
         )}
 
-        <p className={`font-display text-lg italic text-text-on-dark/90 ${condensed ? "mt-6" : "mt-10 md:mt-14"}`}>
+        <p
+          className={`font-display text-base italic text-text-on-dark/90 md:text-lg ${condensed ? "mt-5" : "mt-8"}`}
+        >
           We proudly welcome everyone regardless of religion, gender, race, or sexual orientation!
         </p>
 
-        <div className="mt-8 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-text-on-dark/70 md:flex-row md:items-center md:justify-between">
-          <div className="space-y-1">
+        <div className="mt-6 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-text-on-dark/70 md:flex-row md:items-center md:justify-between">
+          <div className="space-y-0.5">
             <p>info@g10.studio · +297 6992469</p>
             <p>Westraat #4, Oranjestad, Aruba</p>
           </div>

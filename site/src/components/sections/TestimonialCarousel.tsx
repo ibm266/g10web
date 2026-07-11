@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { Container } from "@/components/ui/Section";
-import { StarRating } from "@/components/ui/StarRating";
+import { StarRatingReveal } from "@/components/ui/StarRating";
 import { testimonials } from "@/lib/content";
-import { REVIEW_PRIMARY_URL, REVIEW_STATS } from "@/lib/reviews";
+import { REVIEW_PRIMARY_URL, REVIEW_STATS, reviewPlatforms } from "@/lib/reviews";
 
 export function TestimonialCarousel({ compact = false }: { compact?: boolean }) {
   const [index, setIndex] = useState(0);
@@ -31,57 +31,55 @@ export function TestimonialCarousel({ compact = false }: { compact?: boolean }) 
 
   const t = testimonials[index];
 
+  if (compact) {
+    return (
+      <Container>
+        <blockquote className="font-display text-xl italic leading-snug">{t.text}</blockquote>
+        <p className="mt-3 text-sm text-text-muted">{t.name}</p>
+      </Container>
+    );
+  }
+
   return (
     <Container>
-      <div
-        id="reviews"
-        className={`relative overflow-hidden ${compact ? "" : "rounded-[20px] bg-[#f3ede2] p-8 md:p-12"}`}
-      >
-        {!compact && (
-          <span
-            className="pointer-events-none absolute left-1.5 top-1.5 font-display text-[180px] leading-none text-accent/10 animate-drift md:text-[220px]"
-            aria-hidden
-          >
-            &ldquo;
-          </span>
-        )}
-        <div className="relative flex flex-wrap items-end gap-3">
-          <div className="font-display text-[56px] font-medium leading-none text-accent">
-            {count}+
-          </div>
-          <div className="min-w-0 flex-1">
-            <StarRating size="md" className="mb-1.5" />
-            <div className="text-[13px] leading-snug text-text-muted">
-              {REVIEW_STATS.shortLabel}
-              <br />
-              {REVIEW_STATS.platformsLabel}
-            </div>
-          </div>
+      <div id="reviews" className="flex flex-col items-center text-center">
+        <span className="font-display text-[52px] font-medium leading-none text-accent tabular-nums md:text-[64px]">
+          {count}+
+        </span>
+        <StarRatingReveal size="2xl" className="mt-4" />
+        <p className="mt-3 text-sm text-text-muted md:text-base">{REVIEW_STATS.shortLabel}</p>
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+          {reviewPlatforms.map((platform) => (
+            <a
+              key={platform.name}
+              href={platform.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-accent underline-offset-2 transition-colors hover:text-accent-deep hover:underline"
+            >
+              {platform.name}
+            </a>
+          ))}
         </div>
+      </div>
 
-        <a
-          href={REVIEW_PRIMARY_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent underline-offset-2 hover:underline"
+      <div className="relative mt-6 overflow-hidden rounded-[20px] bg-[#f3ede2] p-8 md:mt-8 md:p-12">
+        <span
+          className="pointer-events-none absolute left-1.5 top-1.5 font-display text-[180px] leading-none text-accent/10 animate-drift md:text-[220px]"
+          aria-hidden
         >
-          Read reviews for yourself
-          <span aria-hidden="true">→</span>
-        </a>
+          &ldquo;
+        </span>
 
-        <blockquote className="relative mt-6 min-h-[140px] font-display text-[23px] italic leading-snug md:text-[30px] md:leading-tight">
+        <blockquote className="relative min-h-[140px] font-display text-[23px] italic leading-snug md:text-[30px] md:leading-tight">
           {t.text}
         </blockquote>
         <p className="relative mt-4 text-[13px] font-medium uppercase tracking-wider text-text-muted">
           {t.name}
-          {!compact && (
-            <>
-              <br />
-              <span className="font-normal normal-case tracking-normal">
-                {t.venue}, {t.year}
-              </span>
-            </>
-          )}
+          <br />
+          <span className="font-normal normal-case tracking-normal">
+            {t.venue}, {t.year}
+          </span>
         </p>
 
         <div className="relative mt-5 flex items-center justify-between">
@@ -116,6 +114,16 @@ export function TestimonialCarousel({ compact = false }: { compact?: boolean }) 
           </div>
         </div>
       </div>
+
+      <a
+        href={REVIEW_PRIMARY_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-ui="button"
+        className="mx-auto mt-6 flex h-[52px] w-fit items-center justify-center rounded-full bg-accent px-6 text-[15px] font-medium tracking-wide text-[#f5efe6] transition-colors duration-200 hover:bg-accent-deep md:mt-8"
+      >
+        Read reviews for yourself
+      </a>
     </Container>
   );
 }

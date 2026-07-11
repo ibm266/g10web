@@ -35,7 +35,7 @@ export default function HomePage() {
         }
         ctas={[
           { label: "Check my date", href: ROUTES.inquire },
-          { label: "See the work", href: ROUTES.portfolio, variant: "outline-light" },
+          { label: "Read reviews", href: "#reviews", variant: "outline-light" },
         ]}
         scrollDial
       />
@@ -46,10 +46,10 @@ export default function HomePage() {
       <Section dark id="how-it-works">
         <ProcessSteps />
       </Section>
-      <Section>
+      <Section className="!pb-10 md:!pb-12">
         <MeetPhotographer />
       </Section>
-      <Section className="!py-16">
+      <Section className="!pt-6 !pb-14 md:!pt-8 md:!pb-16">
         <TestimonialCarousel />
       </Section>
       <Section>

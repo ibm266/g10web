@@ -143,6 +143,26 @@
     "focal_x": 50.0,
     "focal_y": 45.0
   },
+  "img_7314b3e8c9": {
+    "id": "img_7314b3e8c9",
+    "src": "/media/img_7314b3e8c9.jpg",
+    "categories": [
+      "about"
+    ],
+    "styles": [
+      "black-and-white"
+    ],
+    "primary_category": "about",
+    "primary_style": "black-and-white",
+    "filename": "IMG_7622.jpg",
+    "width": 1639,
+    "height": 2459,
+    "aspect_ratio": 0.667,
+    "orientation": "portrait",
+    "is_landscape": false,
+    "focal_x": 58.6,
+    "focal_y": 24.0
+  },
   "img_9a8113ad03": {
     "id": "img_9a8113ad03",
     "src": "/media/img_9a8113ad03.png",

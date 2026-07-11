@@ -71,7 +71,7 @@ export function WhyG10Grid({ textOnly = false }: { textOnly?: boolean }) {
 
       <div
         ref={scrollRef}
-        className="scrollbar-hide mt-8 flex snap-x snap-mandatory scroll-smooth gap-4 overflow-x-auto px-[max(1.25rem,calc(50%-39vw))] pb-2 md:px-[max(3rem,calc(50%-10rem))]"
+        className="scrollbar-hide mt-8 flex items-stretch snap-x snap-mandatory scroll-smooth gap-4 overflow-x-auto px-[max(1.25rem,calc(50%-39vw))] pb-2 md:px-[max(3rem,calc(50%-10rem))]"
       >
         {whyG10Cards.map((card, i) => {
           const meta = slotImageMeta("home", WHY_G10_SLOTS[i]);
@@ -83,55 +83,57 @@ export function WhyG10Grid({ textOnly = false }: { textOnly?: boolean }) {
               ref={(el) => {
                 itemRefs.current[i] = el;
               }}
-              className="w-[85vw] shrink-0 snap-center md:w-80"
+              className="flex w-[85vw] shrink-0 snap-center md:w-80"
             >
-            <article
-              className="overflow-hidden rounded-[20px] border border-border bg-surface"
-            >
-              {!textOnly && (
-                <div className="relative h-44 bg-border/30">
-                  <PhotoImage
-                    src={meta?.src ?? ""}
-                    alt=""
-                    fill
-                    hoverZoom
-                    focalX={meta?.focalX}
-                    focalY={meta?.focalY}
-                    sizes="320px"
-                  />
+              <article
+                className={`flex w-full flex-col overflow-hidden rounded-[20px] border border-border bg-surface ${
+                  textOnly ? "min-h-[300px]" : "min-h-[420px]"
+                }`}
+              >
+                {!textOnly && (
+                  <div className="relative h-44 shrink-0 bg-border/30">
+                    <PhotoImage
+                      src={meta?.src ?? ""}
+                      alt=""
+                      fill
+                      hoverZoom
+                      focalX={meta?.focalX}
+                      focalY={meta?.focalY}
+                      sizes="320px"
+                    />
+                  </div>
+                )}
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="font-display text-xl italic md:text-2xl">
+                    {isReviewsCard ? (
+                      <span className="flex flex-wrap items-center gap-2">
+                        <span>{REVIEW_STATS.count}+ Testimonials</span>
+                        <StarRating size="sm" />
+                      </span>
+                    ) : (
+                      card.title
+                    )}
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-text-muted">{card.body}</p>
+                  {card.cta &&
+                    (card.cta.external ? (
+                      <a
+                        href={card.cta.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${ctaClassName} mt-auto pt-3`}
+                      >
+                        {card.cta.label}
+                        <span aria-hidden="true">→</span>
+                      </a>
+                    ) : (
+                      <Link href={card.cta.href} className={`${ctaClassName} mt-auto pt-3`}>
+                        {card.cta.label}
+                        <span aria-hidden="true">→</span>
+                      </Link>
+                    ))}
                 </div>
-              )}
-              <div className="p-5">
-                <h3 className="font-display text-xl italic md:text-2xl">
-                  {isReviewsCard ? (
-                    <span className="flex flex-wrap items-center gap-2">
-                      <span>{REVIEW_STATS.count}+ Testimonials</span>
-                      <StarRating size="sm" />
-                    </span>
-                  ) : (
-                    card.title
-                  )}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-text-muted">{card.body}</p>
-                {card.cta &&
-                  (card.cta.external ? (
-                    <a
-                      href={card.cta.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={ctaClassName}
-                    >
-                      {card.cta.label}
-                      <span aria-hidden="true">→</span>
-                    </a>
-                  ) : (
-                    <Link href={card.cta.href} className={ctaClassName}>
-                      {card.cta.label}
-                      <span aria-hidden="true">→</span>
-                    </Link>
-                  ))}
-              </div>
-            </article>
+              </article>
             </div>
           );
         })}

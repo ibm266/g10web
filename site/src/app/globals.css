@@ -170,7 +170,7 @@ a:not([data-ui]):hover {
   object-fit: cover;
   object-position: center 32%;
   transform-origin: center 32%;
-  animation: kenburns 14s ease-in-out infinite alternate;
+  animation: kenburns 6s ease-in-out infinite alternate;
 }
 
 @keyframes marquee {
@@ -204,7 +204,7 @@ a:not([data-ui]):hover {
 }
 
 .animate-kenburns {
-  animation: kenburns 14s ease-in-out infinite alternate;
+  animation: kenburns 6s ease-in-out infinite alternate;
   transform-origin: center 32%;
 }
 

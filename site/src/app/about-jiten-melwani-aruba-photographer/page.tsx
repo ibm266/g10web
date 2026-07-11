@@ -56,7 +56,13 @@ export default function AboutPage() {
         <Container>
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[20px] bg-border/30">
-              <PhotoImage src={story?.src ?? ""} alt="" fill focalX={story?.focalX} focalY={story?.focalY} />
+              <PhotoImage
+                src={story?.src ?? ""}
+                alt="Jiten Melwani, G10 Studio photographer"
+                fill
+                focalX={story?.focalX}
+                focalY={story?.focalY}
+              />
             </div>
             <div>
               <SectionHeading className="!text-3xl">

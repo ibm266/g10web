@@ -128,6 +128,16 @@ PINNED_SLOTS: dict[str, dict[str, str]] = {
             "jiten-melwani-throwing-camera.png"
         ),
     },
+    "about": {
+        "hero": (
+            "assets/images/by-page/pages/about-jiten-melwani-aruba-photographer/"
+            "IMG_7622.jpg"
+        ),
+        "story": (
+            "assets/images/by-page/pages/about-jiten-melwani-aruba-photographer/"
+            "jiten-melwani-throwing-camera.png"
+        ),
+    },
 }
 
 

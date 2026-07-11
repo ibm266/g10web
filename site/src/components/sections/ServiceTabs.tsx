@@ -1,7 +1,6 @@
 "use client";
 
 import { PhotoImage } from "@/components/ui/PhotoImage";
-import Link from "next/link";
 import { useState } from "react";
 import { ArrowLink } from "@/components/ui/Button";
 import { Eyebrow, SectionHeading } from "@/components/ui/Typography";
@@ -12,7 +11,6 @@ import { HOME_SERVICE_SLOTS, slotImageMeta } from "@/lib/images";
 export function ServiceTabs() {
   const [active, setActive] = useState(0);
   const service = homeServices[active];
-  const meta = slotImageMeta("home", HOME_SERVICE_SLOTS[active]);
 
   return (
     <Container>
@@ -40,14 +38,31 @@ export function ServiceTabs() {
 
       <div className="mt-4 overflow-hidden rounded-[20px] border border-border bg-surface md:rounded-3xl">
         <div className="relative h-[220px] bg-border/30">
-          <PhotoImage
-            src={meta?.src ?? ""}
-            alt={service.title}
-            fill
-            focalX={meta?.focalX}
-            focalY={meta?.focalY}
-            sizes="(max-width: 768px) 100vw, 600px"
-          />
+          {HOME_SERVICE_SLOTS.map((slot, i) => {
+            const meta = slotImageMeta("home", slot);
+            if (!meta?.src) return null;
+
+            return (
+              <div
+                key={slot}
+                className={`absolute inset-0 transition-opacity duration-500 ease-out ${
+                  active === i ? "opacity-100" : "pointer-events-none opacity-0"
+                }`}
+                aria-hidden={active !== i}
+              >
+                <PhotoImage
+                  src={meta.src}
+                  alt={homeServices[i].title}
+                  fill
+                  fadeOnLoad={false}
+                  focalX={meta.focalX}
+                  focalY={meta.focalY}
+                  sizes="(max-width: 768px) 100vw, 600px"
+                  priority={i === 0}
+                />
+              </div>
+            );
+          })}
         </div>
         <div className="p-5 md:p-6">
           <h3 className="font-display text-2xl font-medium md:text-[30px]">{service.title}</h3>

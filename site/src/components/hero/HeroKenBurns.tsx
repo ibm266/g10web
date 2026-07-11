@@ -37,7 +37,7 @@ export function HeroKenBurns({
 
   useEffect(() => {
     if (slides.length <= 1) return;
-    const id = setInterval(() => setSlide((s) => (s + 1) % slides.length), 14000);
+    const id = setInterval(() => setSlide((s) => (s + 1) % slides.length), 6000);
     return () => clearInterval(id);
   }, [slides.length]);
 
